@@ -1,0 +1,365 @@
+Copy this summary in a new chat whenever you want me to continue the work:
+
+---
+
+# Project Context: Talha Rehamni AI Automation Portfolio Website
+
+I am building a professional portfolio website for **Talha Rehamni — AI Voice Agent & Automation Specialist**.
+
+## Main Goal
+
+Create a high-converting, SEO/GEO-friendly portfolio website targeting clients who need:
+
+* AI Voice Agents
+* AI Receptionists
+* GoHighLevel Automation
+* n8n Automation
+* CRM Automation
+* API Integrations
+* Business Workflow Automation
+
+The website should look like a premium AI automation agency site, not a basic freelancer website.
+
+---
+
+# Design Rules
+
+## Theme
+
+Keep the existing dark futuristic theme:
+
+* Dark background
+* Glass cards
+* Cyan / blue / purple gradients
+* Space Grotesk font
+* Premium SaaS/AI feeling
+
+Do not create random designs. Everything must match the existing website style.
+
+---
+
+# Navbar Requirements
+
+Current navbar structure:
+
+* Home
+* AI Voice
+* n8n
+* GoHighLevel
+* AI Receptionist
+* Case Studies
+* About
+
+Important:
+
+* Active page should show underline/highlight so users know where they are.
+* Do not put every case study in navbar.
+* Case Studies should be one page only.
+* Individual case studies should open from the Case Studies page cards.
+
+---
+
+# Case Studies Structure
+
+There are 7 case studies.
+
+They should not use document names as titles.
+
+Use actual tools/platform names because they are SEO valuable.
+
+Examples:
+
+1. GHL + n8n + ManyChat + AI
+   → AI Instagram Lead Qualification System
+
+2. Airtable + Slack
+   → Product & Sales Operations Automation
+
+3. Retell AI + Twilio + n8n + GHL
+   → AI Voice Recruitment Automation
+
+4. Retell AI + Twilio
+   → Medical Spa AI Voice Agent
+
+5. Monday.com CRM
+   → Real Estate CRM & Pipeline Automation
+
+6. Microsoft Power Automate + AI Builder
+   → Automated Resume Anonymization
+
+7. GoHighLevel + Zapier
+   → End-to-End Lead Management Automation
+
+---
+
+# Case Study Page Requirements
+
+Each case study page should have:
+
+## Hero
+
+* Clear SEO title
+* Tools mentioned
+* Business outcome
+* Short explanation
+
+Example:
+
+"AI-Powered Instagram Lead Qualification System using GoHighLevel, n8n and ManyChat"
+
+---
+
+## Sections Required
+
+Every case study should follow this structure:
+
+1. Breadcrumb
+2. Hero
+3. Case Study Overview
+4. Business Objective
+5. Problem
+6. Solution
+7. Technology Stack
+8. Architecture Flow
+9. How The System Works
+10. Workflow Steps
+11. Implementation Details
+12. Verified Results / Evidence
+13. FAQ
+14. Related Services CTA
+
+---
+
+# Important Content Rules
+
+Do NOT claim:
+
+* revenue increase
+* conversion increase
+* customers gained
+* sales generated
+
+unless evidence exists.
+
+Use wording like:
+
+* "verified workflow activity"
+* "implementation evidence"
+* "system activity"
+* "workflow enrollments"
+
+---
+
+# Example: 1,132 Metric
+
+There was a PDF mentioning:
+
+"1,132"
+
+Correct interpretation:
+
+It represents verified workflow enrollments/activity visible in GoHighLevel.
+
+It does NOT mean:
+
+* 1,132 customers
+* 1,132 leads
+* 1,132 conversions
+* revenue
+
+Always explain this clearly.
+
+---
+
+# PDF-Based Case Study Information
+
+For the GoHighLevel + n8n + ManyChat case:
+
+Architecture:
+
+Instagram
+↓
+ManyChat
+↓
+GoHighLevel
+↓
+n8n + AI
+↓
+Qualified Handoff
+
+Workflow:
+
+1. Capture and initiate
+2. Buffer incoming messages
+3. AI reasoning through n8n
+4. Control and handoff
+
+Verified workflow components:
+
+* AI Reply webhook bridge
+* AI Brain workflow
+* Message buffering
+* AI ON/OFF control
+* Tags and contact-field updates
+* CRM state management
+* Webhook integrations
+
+---
+
+# Flow Diagrams Requirement
+
+Important:
+
+The client wants workflow flows shown visually.
+
+NOT screenshots.
+
+Create them using HTML/CSS:
+
+Examples:
+
+Instagram
+↓
+ManyChat
+↓
+GoHighLevel
+↓
+n8n
+↓
+AI Qualification
+↓
+Sales Team
+
+Use cards/arrows.
+
+Do not use images.
+
+---
+
+# CSS Structure
+
+Because the main style.css became complicated:
+
+Use separate CSS for case studies.
+
+Structure:
+
+```
+style.css
+
+case-studies/
+    case-study.css
+    ai-instagram-lead.html
+    airtable.html
+    retell-ai.html
+```
+
+Global website CSS stays separate.
+
+Case study CSS handles:
+
+* flows
+* cards
+* FAQ
+* architecture
+* metrics
+* case layouts
+
+---
+
+# SEO/GEO Requirements
+
+Every page should be optimized for:
+
+* AI automation services
+* GoHighLevel automation
+* n8n expert
+* AI voice agent developer
+* CRM automation specialist
+
+Use keywords naturally.
+
+Avoid keyword stuffing.
+
+Include:
+
+* proper title
+* meta description
+* headings
+* internal links
+* FAQ sections
+* service links
+
+---
+
+# Coding Style Preference
+
+When giving code:
+
+* Give complete files.
+* Do not give small snippets unless asked.
+* Verify logic before sending.
+* Keep file paths correct.
+* Match existing theme.
+
+Before creating a page check:
+
+1. SEO
+2. GEO
+3. Design consistency
+4. Mobile responsiveness
+5. Internal linking
+6. No fake claims
+7. Tool names are visible
+
+---
+
+# Current Progress
+
+Completed:
+
+* Navbar improvements
+* Home added to navbar
+* Case Studies dropdown idea removed (because too many studies)
+* Case Studies main page created with 7 projects
+* Individual case study layout started
+* Separate case-study.css approach decided
+
+Current focus:
+
+Finish each case study page one by one.
+
+First page completed/planned:
+
+**AI Instagram Lead Qualification System**
+
+Tools:
+
+* GoHighLevel
+* n8n
+* ManyChat
+* AI Automation
+* Instagram DM
+
+---
+
+# Working Style
+
+Do not ask repeated questions.
+
+Understand the overall goal.
+
+Whenever I send a page/code:
+
+First check it from:
+
+* SEO/GEO perspective
+* client conversion perspective
+* design consistency
+* technical correctness
+
+Then provide the corrected full code.
+
+---
+
+Use this context as the project brief.

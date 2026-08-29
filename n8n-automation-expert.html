@@ -7,14 +7,25 @@
 
   <meta
     name="description"
-    content="Talha Rehamni builds reliable n8n automations that connect APIs, AI agents, CRMs, calendars, and business tools."
+    content="Talha Rehamni is an n8n automation expert who builds AI workflows, API integrations, CRM automations, webhooks, lead routing systems, and connected business workflows."
+  />
+
+  <meta
+    name="keywords"
+    content="n8n automation expert, n8n developer, n8n automation, n8n workflow automation, AI automation, API integration, CRM automation, webhook automation"
   />
 
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Talha Rehamni" />
 
-  <title>n8n Automation Expert | Talha Rehamni</title>
+  <link
+    rel="canonical"
+    href="n8n-automation-expert.html"
+  />
 
+  <title>n8n Automation Expert | AI & Workflow Automation | Talha Rehamni</title>
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -23,21 +34,43 @@
     rel="stylesheet"
   />
 
+  <!-- Global Styles -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- n8n Page Styles -->
+  <link rel="stylesheet" href="n8n-automation.css" />
+
+  <!-- Icons -->
+  <script
+    src="https://unpkg.com/lucide@latest"
+    defer
+  ></script>
 </head>
 
 
 <body>
 
-  <!-- Navbar -->
-   <header class="site-header">
+  <!-- =========================================
+       NAVBAR
+       ========================================= -->
+
+  <header class="site-header">
+
     <div class="container nav-wrap">
 
-      <a class="brand" href="index.html">
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="Talha Rehamni home"
+      >
         Talha Rehamni
       </a>
 
-      <nav class="main-nav" aria-label="Main navigation">
+
+      <nav
+        class="main-nav"
+        aria-label="Main navigation"
+      >
 
         <a href="index.html">
           Home
@@ -47,7 +80,11 @@
           AI Voice
         </a>
 
-        <a href="n8n-automation-expert.html">
+        <a
+          href="n8n-automation-expert.html"
+          class="active"
+          aria-current="page"
+        >
           n8n
         </a>
 
@@ -59,39 +96,9 @@
           AI Receptionist
         </a>
 
-        <!-- Case Studies Dropdown -->
-        <div class="nav-dropdown" data-nav-group="case-studies">
-
-          <button
-            class="nav-dropdown-toggle"
-            type="button"
-            aria-expanded="false"
-          >
-            Case Studies
-            <span class="dropdown-arrow"></span>
-          </button>
-
-          <div class="nav-dropdown-menu">
-
-            <a href="case-studies.html">
-              All Case Studies
-            </a>
-
-            <a href="case-studies/ai-voice-agent.html">
-              AI Voice Agent
-            </a>
-
-            <a href="case-studies/gohighlevel-crm.html">
-              GoHighLevel CRM
-            </a>
-
-            <a href="case-studies/n8n-automation.html">
-              n8n Automation
-            </a>
-
-          </div>
-
-        </div>
+        <a href="case-studies.html">
+          Case Studies
+        </a>
 
         <a href="about.html">
           About
@@ -100,26 +107,46 @@
       </nav>
 
     </div>
+
   </header>
+
 
   <main>
 
-    <!-- Hero -->
-    <section class="page-hero container">
+
+    <!-- =========================================
+         HERO
+         ========================================= -->
+
+    <section class="page-hero container n8n-hero">
+
+      <div class="n8n-hero-badge">
+        <span class="n8n-status-dot"></span>
+        AI & Workflow Automation
+      </div>
+
 
       <p class="eyebrow">
-        Workflow and API Automation
+        n8n Automation Expert
       </p>
+
 
       <h1>
-        n8n
-        <span class="gradient-cyan">Automation Expert</span>
+        Build workflows that
+        <span class="gradient-cyan">
+          connect everything
+        </span>
       </h1>
 
+
       <p class="lead">
-        I design n8n workflows that move data reliably between AI tools,
-        APIs, CRMs, calendars, messaging platforms, and internal systems.
+
+        I design n8n automations that connect AI agents, APIs, CRMs,
+        databases, communication tools, and business systems into
+        reliable end-to-end workflows.
+
       </p>
+
 
       <div class="hero-actions">
 
@@ -130,75 +157,267 @@
           rel="noopener noreferrer"
         >
           Hire on Upwork
+          <i
+            data-lucide="arrow-up-right"
+            aria-hidden="true"
+          ></i>
         </a>
+
 
         <a
           class="btn btn-secondary"
           href="case-studies/n8n-automation.html"
         >
           View n8n Case Study
+          <i
+            data-lucide="arrow-right"
+            aria-hidden="true"
+          ></i>
         </a>
 
       </div>
 
+
+      <div class="n8n-hero-tags">
+
+        <span>n8n</span>
+        <span>AI Automation</span>
+        <span>API Integrations</span>
+        <span>CRM Automation</span>
+        <span>Webhooks</span>
+
+      </div>
+
     </section>
 
 
-    <!-- Services / Capabilities -->
-    <section class="section container page-content">
 
-      <div class="card-grid">
+    <!-- =========================================
+         CORE CAPABILITIES
+         ========================================= -->
 
-        <article class="info-card">
+    <section
+      class="section container page-content"
+      aria-labelledby="n8n-capabilities-title"
+    >
+
+      <div class="section-head">
+
+        <p class="eyebrow">
+          What I Build
+        </p>
+
+        <h2 id="n8n-capabilities-title">
+
+          Automation built around
+          <span class="gradient-blue">
+            your business workflow
+          </span>
+
+        </h2>
+
+        <p>
+
+          Instead of connecting tools randomly, I map the process first
+          and then build the automation around the actual business logic,
+          data flow, and required handoffs.
+
+        </p>
+
+      </div>
+
+
+      <div class="card-grid n8n-capability-grid">
+
+
+        <article class="info-card n8n-capability-card">
 
           <div class="card-icon">
-            n8n
+            <i
+              data-lucide="plug-zap"
+              aria-hidden="true"
+            ></i>
           </div>
 
           <h3>
-            API Connections
+            API & Webhook Automation
           </h3>
 
           <p>
-            Connect the services your operation depends on with clear
-            triggers, transformations, and useful outputs.
+
+            Connect applications through APIs and webhooks so information
+            can move automatically between the systems your business uses.
+
           </p>
+
+          <div class="n8n-card-tags">
+
+            <span>REST APIs</span>
+            <span>Webhooks</span>
+            <span>JSON</span>
+
+          </div>
 
         </article>
 
 
-        <article class="info-card">
+
+        <article class="info-card n8n-capability-card">
 
           <div class="card-icon">
-            AI
+            <i
+              data-lucide="brain-circuit"
+              aria-hidden="true"
+            ></i>
           </div>
 
           <h3>
-            AI Workflow Logic
+            AI-Powered Workflows
           </h3>
 
           <p>
-            Use AI where it creates value, including lead qualification,
-            summarization, routing, and human handoff.
+
+            Add AI where it is useful for classification, summarization,
+            lead qualification, extraction, routing, and decision support.
+
           </p>
+
+          <div class="n8n-card-tags">
+
+            <span>AI Agents</span>
+            <span>LLMs</span>
+            <span>Classification</span>
+
+          </div>
 
         </article>
 
 
-        <article class="info-card">
+
+        <article class="info-card n8n-capability-card">
 
           <div class="card-icon">
-            ✓
+            <i
+              data-lucide="database-zap"
+              aria-hidden="true"
+            ></i>
           </div>
 
           <h3>
-            Reliable Delivery
+            CRM Automation
           </h3>
 
           <p>
-            Build workflows with validation, error handling, retries,
-            and practical visibility into each automation.
+
+            Automatically create, update, tag, route, and synchronize
+            CRM records based on events happening across your workflow.
+
           </p>
+
+          <div class="n8n-card-tags">
+
+            <span>GoHighLevel</span>
+            <span>CRM</span>
+            <span>Lead Routing</span>
+
+          </div>
+
+        </article>
+
+
+
+        <article class="info-card n8n-capability-card">
+
+          <div class="card-icon">
+            <i
+              data-lucide="workflow"
+              aria-hidden="true"
+            ></i>
+          </div>
+
+          <h3>
+            Multi-Step Workflows
+          </h3>
+
+          <p>
+
+            Build conditional workflows that process information,
+            make decisions, trigger actions, and continue through
+            multiple systems.
+
+          </p>
+
+          <div class="n8n-card-tags">
+
+            <span>Conditions</span>
+            <span>Routing</span>
+            <span>Branches</span>
+
+          </div>
+
+        </article>
+
+
+
+        <article class="info-card n8n-capability-card">
+
+          <div class="card-icon">
+            <i
+              data-lucide="refresh-cw"
+              aria-hidden="true"
+            ></i>
+          </div>
+
+          <h3>
+            Data Processing
+          </h3>
+
+          <p>
+
+            Transform, filter, validate, structure, and route data
+            between different applications and business systems.
+
+          </p>
+
+          <div class="n8n-card-tags">
+
+            <span>Data Mapping</span>
+            <span>Validation</span>
+            <span>Transformations</span>
+
+          </div>
+
+        </article>
+
+
+
+        <article class="info-card n8n-capability-card">
+
+          <div class="card-icon">
+            <i
+              data-lucide="shield-check"
+              aria-hidden="true"
+            ></i>
+          </div>
+
+          <h3>
+            Reliable Automation
+          </h3>
+
+          <p>
+
+            Design workflows with validation, error handling,
+            retries, logging, and clear points for human intervention.
+
+          </p>
+
+          <div class="n8n-card-tags">
+
+            <span>Error Handling</span>
+            <span>Retries</span>
+            <span>Monitoring</span>
+
+          </div>
 
         </article>
 
@@ -207,52 +426,773 @@
     </section>
 
 
-    <!-- Workflow Section -->
-    <section class="section section-alt">
+
+    <!-- =========================================
+         VISUAL WORKFLOW
+         ========================================= -->
+
+    <section
+      class="section section-alt n8n-flow-section"
+      aria-labelledby="n8n-flow-title"
+    >
 
       <div class="container page-content">
 
-        <h2>
-          Turn manual steps into a
-          <span class="gradient-blue">connected workflow</span>
-        </h2>
+        <div class="section-head">
 
-        <p>
-          From webhook intake to CRM update and follow-up, every step can
-          be mapped around the way your team actually works.
-        </p>
+          <p class="eyebrow">
+            Visual Workflow
+          </p>
 
+          <h2 id="n8n-flow-title">
 
-        <!-- CTA -->
-        <div class="cta-box page-cta">
+            From trigger to
+            <span class="gradient-cyan">
+              completed action
+            </span>
 
-          <h2>
-            Ready to automate a workflow?
           </h2>
 
           <p>
-            Bring a repetitive process, integration problem,
-            or unfinished n8n flow.
+
+            A typical automation can receive an event, process the data,
+            use AI for reasoning, update your systems, and trigger the
+            next action automatically.
+
           </p>
 
-          <div class="hero-actions">
+        </div>
 
-            <a
-              class="btn btn-primary"
-              href="https://www.upwork.com/freelancers/~0130a036a70bd1e74e"
-              target="_blank"
-              rel="noopener noreferrer"
+
+        <div
+          class="n8n-visual-flow"
+          aria-label="Example n8n automation workflow"
+        >
+
+
+          <div class="n8n-flow-node">
+
+            <div class="n8n-flow-icon">
+              <i
+                data-lucide="webhook"
+                aria-hidden="true"
+              ></i>
+            </div>
+
+            <strong>
+              Trigger
+            </strong>
+
+            <span>
+              Webhook / Form / Event
+            </span>
+
+          </div>
+
+
+          <div class="n8n-flow-arrow">
+            <span></span>
+          </div>
+
+
+          <div class="n8n-flow-node">
+
+            <div class="n8n-flow-icon">
+              <i
+                data-lucide="database"
+                aria-hidden="true"
+              ></i>
+            </div>
+
+            <strong>
+              Get Data
+            </strong>
+
+            <span>
+              CRM / API / Database
+            </span>
+
+          </div>
+
+
+          <div class="n8n-flow-arrow">
+            <span></span>
+          </div>
+
+
+          <div class="n8n-flow-node n8n-flow-ai">
+
+            <div class="n8n-flow-icon">
+              <i
+                data-lucide="brain-circuit"
+                aria-hidden="true"
+              ></i>
+            </div>
+
+            <strong>
+              AI Processing
+            </strong>
+
+            <span>
+              Analyze / Classify / Decide
+            </span>
+
+          </div>
+
+
+          <div class="n8n-flow-arrow">
+            <span></span>
+          </div>
+
+
+          <div class="n8n-flow-node">
+
+            <div class="n8n-flow-icon">
+              <i
+                data-lucide="git-branch"
+                aria-hidden="true"
+              ></i>
+            </div>
+
+            <strong>
+              Route
+            </strong>
+
+            <span>
+              Conditions / Business Logic
+            </span>
+
+          </div>
+
+
+          <div class="n8n-flow-arrow">
+            <span></span>
+          </div>
+
+
+          <div class="n8n-flow-node">
+
+            <div class="n8n-flow-icon">
+              <i
+                data-lucide="send"
+                aria-hidden="true"
+              ></i>
+            </div>
+
+            <strong>
+              Action
+            </strong>
+
+            <span>
+              CRM / SMS / Email / Handoff
+            </span>
+
+          </div>
+
+
+        </div>
+
+
+        <div class="n8n-flow-note">
+
+          <i
+            data-lucide="info"
+            aria-hidden="true"
+          ></i>
+
+          <p>
+
+            The exact workflow depends on the business process,
+            systems, APIs, and automation requirements.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         USE CASES
+         ========================================= -->
+
+    <section
+      class="section container page-content"
+      aria-labelledby="n8n-usecases-title"
+    >
+
+      <div class="section-head">
+
+        <p class="eyebrow">
+          Automation Use Cases
+        </p>
+
+        <h2 id="n8n-usecases-title">
+
+          What can be automated with
+          <span class="gradient-purple">
+            n8n?
+          </span>
+
+        </h2>
+
+      </div>
+
+
+      <div class="n8n-usecase-grid">
+
+
+        <article class="n8n-usecase">
+
+          <i
+            data-lucide="user-plus"
+            aria-hidden="true"
+          ></i>
+
+          <div>
+
+            <h3>
+              Lead Qualification
+            </h3>
+
+            <p>
+              Capture leads, enrich information, qualify them,
+              and route them to the right workflow or team.
+            </p>
+
+          </div>
+
+        </article>
+
+
+
+        <article class="n8n-usecase">
+
+          <i
+            data-lucide="messages-square"
+            aria-hidden="true"
+          ></i>
+
+          <div>
+
+            <h3>
+              AI Customer Communication
+            </h3>
+
+            <p>
+              Connect AI responses with CRM records,
+              messaging platforms, and follow-up workflows.
+            </p>
+
+          </div>
+
+        </article>
+
+
+
+        <article class="n8n-usecase">
+
+          <i
+            data-lucide="calendar-check"
+            aria-hidden="true"
+          ></i>
+
+          <div>
+
+            <h3>
+              Appointment Automation
+            </h3>
+
+            <p>
+              Connect forms, calendars, CRMs, reminders,
+              confirmations, and follow-up actions.
+            </p>
+
+          </div>
+
+        </article>
+
+
+
+        <article class="n8n-usecase">
+
+          <i
+            data-lucide="file-text"
+            aria-hidden="true"
+          ></i>
+
+          <div>
+
+            <h3>
+              Document & Data Processing
+            </h3>
+
+            <p>
+              Extract information, structure data, process documents,
+              and send results into the required system.
+            </p>
+
+          </div>
+
+        </article>
+
+
+
+        <article class="n8n-usecase">
+
+          <i
+            data-lucide="bell-ring"
+            aria-hidden="true"
+          ></i>
+
+          <div>
+
+            <h3>
+              Notifications & Alerts
+            </h3>
+
+            <p>
+              Automatically notify teams through Slack, email,
+              SMS, or other communication channels.
+            </p>
+
+          </div>
+
+        </article>
+
+
+
+        <article class="n8n-usecase">
+
+          <i
+            data-lucide="repeat-2"
+            aria-hidden="true"
+          ></i>
+
+          <div>
+
+            <h3>
+              Repetitive Business Processes
+            </h3>
+
+            <p>
+              Replace repetitive manual steps with structured,
+              repeatable automation workflows.
+            </p>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         INTEGRATIONS
+         ========================================= -->
+
+    <section
+      class="section section-alt"
+      aria-labelledby="n8n-integrations-title"
+    >
+
+      <div class="container page-content">
+
+        <div class="section-head">
+
+          <p class="eyebrow">
+            Connected Systems
+          </p>
+
+          <h2 id="n8n-integrations-title">
+
+            Connect the tools your business
+            <span class="gradient-blue">
+              already uses
+            </span>
+
+          </h2>
+
+          <p>
+
+            n8n can act as the automation layer between your
+            existing applications and services.
+
+          </p>
+
+        </div>
+
+
+        <div class="n8n-integrations">
+
+          <span>
+            n8n
+          </span>
+
+          <span>
+            GoHighLevel
+          </span>
+
+          <span>
+            OpenAI
+          </span>
+
+          <span>
+            Retell AI
+          </span>
+
+          <span>
+            Vapi
+          </span>
+
+          <span>
+            Twilio
+          </span>
+
+          <span>
+            ManyChat
+          </span>
+
+          <span>
+            Airtable
+          </span>
+
+          <span>
+            Slack
+          </span>
+
+          <span>
+            Monday.com
+          </span>
+
+          <span>
+            Google Sheets
+          </span>
+
+          <span>
+            REST APIs
+          </span>
+
+          <span>
+            Webhooks
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         CLIENT FEEDBACK
+         ========================================= -->
+
+    <section
+      class="section container page-content reviews-section"
+      aria-labelledby="reviews-title"
+    >
+
+      <div class="section-head reviews-section-head">
+
+        <p class="eyebrow">
+          Client Feedback
+        </p>
+
+        <h2 id="reviews-title">
+
+          What clients say about
+          <span class="gradient-cyan">
+            working with me
+          </span>
+
+        </h2>
+
+        <p>
+
+          Feedback from client projects involving automation,
+          integrations, and technical implementation.
+
+        </p>
+
+      </div>
+
+
+      <div class="reviews-trust-bar">
+
+
+        <div class="trust-rating">
+
+          <div
+            class="trust-stars"
+            aria-label="5 out of 5 stars"
+          >
+            ★★★★★
+          </div>
+
+          <div>
+
+            <strong>
+              5.0
+            </strong>
+
+            <span>
+              Client rating
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="trust-divider"></div>
+
+
+        <div class="trust-point">
+
+          <i
+            data-lucide="badge-check"
+            aria-hidden="true"
+          ></i>
+
+          <span>
+            Client feedback
+          </span>
+
+        </div>
+
+
+        <div class="trust-point">
+
+          <i
+            data-lucide="message-circle-check"
+            aria-hidden="true"
+          ></i>
+
+          <span>
+            Direct project experience
+          </span>
+
+        </div>
+
+
+        <div class="trust-point">
+
+          <i
+            data-lucide="shield-check"
+            aria-hidden="true"
+          ></i>
+
+          <span>
+            Transparent work
+          </span>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="reviews-grid">
+
+
+        <!-- Verified Review -->
+        <article class="review-card">
+
+
+          <div class="review-card-top">
+
+            <div class="review-project">
+
+              <i
+                data-lucide="calendar-clock"
+                aria-hidden="true"
+              ></i>
+
+              <span>
+                Embed code for Existing Patient Scheduling Portal
+              </span>
+
+            </div>
+
+
+            <div
+              class="review-rating"
+              aria-label="5 out of 5 stars"
             >
-              Start a Project
-            </a>
 
-            <a
-              class="btn btn-secondary"
-              href="case-studies/n8n-automation.html"
-            >
-              See n8n Case Study
-            </a>
+              <span>
+                ★★★★★
+              </span>
 
+              <strong>
+                5.0
+              </strong>
+
+            </div>
+
+          </div>
+
+
+          <div class="review-date">
+
+            <i
+              data-lucide="calendar-days"
+              aria-hidden="true"
+            ></i>
+
+            <span>
+              November 4, 2025
+            </span>
+
+          </div>
+
+
+          <blockquote class="review-quote">
+
+            "He is superb and will go above and beyond to help you
+            with your project. I highly recommend him"
+
+          </blockquote>
+
+
+          <div class="review-author">
+
+            <div class="review-author-icon">
+
+              <i
+                data-lucide="user-circle"
+                aria-hidden="true"
+              ></i>
+
+            </div>
+
+
+            <div>
+
+              <strong>
+                Client feedback
+              </strong>
+
+              <span>
+                Verified project review
+              </span>
+
+            </div>
+
+          </div>
+
+
+        </article>
+
+
+      </div>
+
+
+      <p class="reviews-note">
+
+        Client feedback is presented as provided. The website does not
+        use testimonials to imply guaranteed business results.
+
+      </p>
+
+    </section>
+
+
+
+    <!-- =========================================
+         CASE STUDY CTA
+         ========================================= -->
+
+    <section
+      class="section container page-content"
+      aria-labelledby="n8n-case-title"
+    >
+
+      <div class="n8n-case-preview">
+
+
+        <div class="n8n-case-content">
+
+          <p class="eyebrow">
+            Featured Case Study
+          </p>
+
+          <h2 id="n8n-case-title">
+
+            See how n8n connects
+            <span class="gradient-blue">
+              real business workflows
+            </span>
+
+          </h2>
+
+          <p>
+
+            Explore the implementation, architecture, tools,
+            workflow logic, and automation process behind an
+            n8n-powered system.
+
+          </p>
+
+
+          <a
+            class="btn btn-secondary"
+            href="case-studies/n8n-automation.html"
+          >
+            Explore n8n Case Study
+            <i
+              data-lucide="arrow-right"
+              aria-hidden="true"
+            ></i>
+          </a>
+
+        </div>
+
+
+        <div class="n8n-mini-flow">
+
+          <div>
+            <span>01</span>
+            Trigger
+          </div>
+
+          <i
+            data-lucide="arrow-right"
+            aria-hidden="true"
+          ></i>
+
+          <div>
+            <span>02</span>
+            Process
+          </div>
+
+          <i
+            data-lucide="arrow-right"
+            aria-hidden="true"
+          ></i>
+
+          <div>
+            <span>03</span>
+            AI
+          </div>
+
+          <i
+            data-lucide="arrow-right"
+            aria-hidden="true"
+          ></i>
+
+          <div>
+            <span>04</span>
+            Action
           </div>
 
         </div>
@@ -261,17 +1201,103 @@
 
     </section>
 
+
+
+    <!-- =========================================
+         FINAL CTA
+         ========================================= -->
+
+    <section
+      class="section container page-content"
+      aria-labelledby="n8n-cta-title"
+    >
+
+      <div class="cta-box page-cta n8n-final-cta">
+
+        <p class="eyebrow">
+          Ready to Automate?
+        </p>
+
+
+        <h2 id="n8n-cta-title">
+
+          Turn your repetitive process into
+          <span class="gradient-cyan">
+            an automated workflow
+          </span>
+
+        </h2>
+
+
+        <p>
+
+          Bring a repetitive process, integration problem,
+          or unfinished n8n workflow. We can map the process
+          and identify where automation makes sense.
+
+        </p>
+
+
+        <div class="hero-actions">
+
+
+          <a
+            class="btn btn-primary"
+            href="https://www.upwork.com/freelancers/~0130a036a70bd1e74e"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            Start a Project
+
+            <i
+              data-lucide="arrow-right"
+              aria-hidden="true"
+            ></i>
+
+          </a>
+
+
+          <a
+            class="btn btn-secondary"
+            href="case-studies.html"
+          >
+
+            View All Case Studies
+
+            <i
+              data-lucide="layers"
+              aria-hidden="true"
+            ></i>
+
+          </a>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
   </main>
 
 
-  <!-- Footer -->
+
+  <!-- =========================================
+       FOOTER
+       ========================================= -->
+
   <footer class="site-footer">
 
     <div class="container">
 
       <p>
-        © <span id="year"></span> Talha Rehamni -
+
+        © <span id="year"></span>
+        Talha Rehamni -
         AI Voice Agent &amp; Automation Specialist
+
       </p>
 
     </div>
@@ -279,7 +1305,23 @@
   </footer>
 
 
+
   <script src="script.js"></script>
 
+
+  <script>
+
+    window.addEventListener("load", function () {
+
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+
+    });
+
+  </script>
+
+
 </body>
+
 </html>
