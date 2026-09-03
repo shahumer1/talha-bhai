@@ -7,13 +7,25 @@
 
   <meta
     name="description"
-    content="Talha Rehamni builds GoHighLevel CRM automations for lead capture, pipelines, follow-up, booking, and AI voice workflows."
+    content="AI receptionist workflows for service businesses that answer calls, qualify enquiries, book appointments, and update the CRM. AI receptionist for clinics, spas, and agencies."
   />
 
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Talha Rehamni" />
 
-  <title>GoHighLevel Automation Expert | Talha Rehamni</title>
+  <meta
+    property="og:title"
+    content="AI Receptionist for Service Businesses | Talha Rehamni"
+  />
+
+  <meta
+    property="og:description"
+    content="AI receptionist workflows for service businesses that answer calls, qualify enquiries, book appointments, and update the CRM."
+  />
+
+  <meta property="og:type" content="website" />
+
+  <title>AI Receptionist for Service Businesses | Talha Rehamni</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,12 +36,338 @@
   />
 
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="case-study.css" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+
+  <style>
+    /* =========================================================
+       PAGE-SPECIFIC STYLES - AI RECEPTIONIST (Responsive)
+    ========================================================= */
+
+    .receptionist-hero-accent {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .receptionist-hero-accent::before {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      right: -150px;
+      top: -200px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(56, 189, 248, 0.12), transparent 70%);
+      pointer-events: none;
+    }
+
+    /* Capabilities Grid - Desktop 3 cols */
+    .rec-capabilities {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+    }
+
+    .rec-capability {
+      padding: 1.8rem 1.5rem;
+      border: 1px solid var(--border, rgba(148, 163, 184, 0.18));
+      border-radius: 18px;
+      background: rgba(17, 24, 39, 0.7);
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .rec-capability:hover {
+      transform: translateY(-4px);
+      border-color: rgba(56, 189, 248, 0.3);
+      box-shadow: 0 12px 30px rgba(56, 189, 248, 0.06);
+    }
+
+    .rec-capability .cap-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: rgba(56, 189, 248, 0.08);
+      color: var(--cyan, #38bdf8);
+      margin-bottom: 0.8rem;
+    }
+
+    .rec-capability .cap-icon svg {
+      width: 24px;
+      height: 24px;
+      stroke-width: 1.8;
+    }
+
+    .rec-capability h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.1rem;
+      color: var(--text, #f8fafc);
+    }
+
+    .rec-capability p {
+      margin: 0;
+      color: var(--muted, #9db2c9);
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+
+    /* Case Study Highlight Cards - 2 cols */
+    .rec-case-highlights {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.2rem;
+      margin-top: 1.5rem;
+    }
+
+    .rec-case-card {
+      padding: 1.8rem;
+      border: 1px solid rgba(56, 189, 248, 0.15);
+      border-radius: 18px;
+      background: rgba(17, 24, 39, 0.7);
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .rec-case-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(56, 189, 248, 0.4);
+      box-shadow: 0 12px 30px rgba(56, 189, 248, 0.08);
+    }
+
+    .rec-case-card .case-badge {
+      display: inline-block;
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(56, 189, 248, 0.1);
+      color: var(--cyan, #38bdf8);
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 0.6rem;
+    }
+
+    .rec-case-card h3 {
+      margin: 0 0 0.4rem;
+      font-size: 1.05rem;
+      color: var(--text, #f8fafc);
+    }
+
+    .rec-case-card p {
+      margin: 0 0 1rem;
+      color: var(--muted, #9db2c9);
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+
+    .rec-case-card .case-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--cyan, #38bdf8);
+      font-weight: 600;
+      font-size: 0.85rem;
+      transition: gap 0.3s ease;
+    }
+
+    .rec-case-card .case-link:hover {
+      gap: 0.8rem;
+    }
+
+    .rec-case-card .case-link svg {
+      width: 16px;
+      height: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .rec-case-card .case-link:hover svg {
+      transform: translateX(3px);
+    }
+
+    /* Call Flow Steps - 4 cols */
+    .rec-flow {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.8rem;
+      margin-top: 1.5rem;
+    }
+
+    .rec-flow-step {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      border: 1px solid var(--border, rgba(148, 163, 184, 0.18));
+      border-radius: 16px;
+      background: rgba(17, 24, 39, 0.6);
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .rec-flow-step:hover {
+      transform: translateY(-4px);
+      border-color: rgba(56, 189, 248, 0.3);
+    }
+
+    .rec-flow-step .flow-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(56, 189, 248, 0.08);
+      color: var(--cyan, #38bdf8);
+      margin-bottom: 0.8rem;
+    }
+
+    .rec-flow-step .flow-icon svg {
+      width: 22px;
+      height: 22px;
+      stroke-width: 1.8;
+    }
+
+    .rec-flow-step strong {
+      display: block;
+      font-size: 0.9rem;
+      color: var(--text, #f8fafc);
+      margin-bottom: 0.3rem;
+    }
+
+    .rec-flow-step span {
+      font-size: 0.75rem;
+      color: var(--muted, #9db2c9);
+      line-height: 1.5;
+    }
+
+    /* Integrations Row */
+    .rec-integrations {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.8rem;
+      margin-top: 1.5rem;
+    }
+
+    .rec-integrations span {
+      padding: 0.6rem 1.1rem;
+      border: 1px solid rgba(56, 189, 248, 0.15);
+      border-radius: 999px;
+      background: rgba(17, 24, 39, 0.6);
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.8rem;
+      font-weight: 500;
+      transition: border-color 0.3s ease, background 0.3s ease;
+    }
+
+    .rec-integrations span:hover {
+      border-color: rgba(56, 189, 248, 0.4);
+      background: rgba(56, 189, 248, 0.05);
+    }
+
+    /* =========================================================
+       RESPONSIVE BREAKPOINTS
+    ========================================================= */
+
+    @media (max-width: 900px) {
+      .rec-capabilities {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .rec-case-highlights {
+        grid-template-columns: 1fr 1fr;
+      }
+      .rec-flow {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 700px) {
+      .rec-capabilities {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+      }
+      .rec-capability {
+        padding: 1.2rem 1rem;
+      }
+      .rec-case-highlights {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+      }
+      .rec-case-card {
+        padding: 1.2rem;
+      }
+      .rec-flow {
+        grid-template-columns: 1fr;
+        gap: 0.6rem;
+      }
+      .rec-flow-step {
+        padding: 1rem;
+      }
+      .rec-integrations {
+        gap: 0.5rem;
+      }
+      .rec-integrations span {
+        font-size: 0.7rem;
+        padding: 0.4rem 0.8rem;
+      }
+      .case-study-cta .hero-actions {
+        flex-direction: column;
+        width: 100%;
+      }
+      .case-study-cta .btn {
+        width: 100%;
+      }
+    }
+
+    /* Small phones */
+    @media (max-width: 480px) {
+      .rec-capability .cap-icon {
+        width: 44px;
+        height: 44px;
+      }
+      .rec-capability .cap-icon svg {
+        width: 20px;
+        height: 20px;
+      }
+      .rec-flow-step .flow-icon {
+        width: 40px;
+        height: 40px;
+      }
+      .rec-flow-step .flow-icon svg {
+        width: 18px;
+        height: 18px;
+      }
+      .rec-case-card h3 {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Talha Rehamni - AI Receptionist for Service Businesses",
+      "description": "AI receptionist workflows for service businesses that answer calls, qualify enquiries, book appointments, and update the CRM.",
+      "provider": {
+        "@type": "Person",
+        "name": "Talha Rehamni",
+        "sameAs": "https://www.upwork.com/freelancers/~0130a036a70bd1e74e"
+      },
+      "serviceType": ["AI Receptionist", "AI Voice Agent", "Appointment Booking"]
+    }
+  </script>
+
 </head>
 
 <body>
 
-  <!-- Navbar -->
- <header class="site-header">
+  <!-- =========================================
+       NAVBAR
+  ========================================== -->
+
+  <header class="site-header">
     <div class="container nav-wrap">
 
       <a class="brand" href="index.html">
@@ -38,63 +376,36 @@
 
       <nav class="main-nav" aria-label="Main navigation">
 
-        <a href="index.html">
-          Home
-        </a>
-
-        <a href="ai-voice-agent-developer.html">
-          AI Voice
-        </a>
-
-        <a href="n8n-automation-expert.html">
-          n8n
-        </a>
-
-        <a href="gohighlevel-automation.html">
-          GoHighLevel
-        </a>
-
-        <a href="ai-receptionist.html">
-          AI Receptionist
-        </a>
+        <a href="index.html">Home</a>
+        <a href="ai-voice-agent-developer.html">AI Voice</a>
+        <a href="n8n-automation-expert.html">n8n</a>
+        <a href="gohighlevel-automation.html">GoHighLevel</a>
+        <a href="ai-receptionist.html" class="active">AI Receptionist</a>
 
         <!-- Case Studies Dropdown -->
         <div class="nav-dropdown" data-nav-group="case-studies">
 
-          <button
-            class="nav-dropdown-toggle"
-            type="button"
-            aria-expanded="false"
-          >
+          <button class="nav-dropdown-toggle" type="button" aria-expanded="false">
             Case Studies
             <span class="dropdown-arrow"></span>
           </button>
 
           <div class="nav-dropdown-menu">
 
-            <a href="case-studies.html">
-              All Case Studies
-            </a>
-
-            <a href="case-studies/ai-voice-agent.html">
-              AI Voice Agent
-            </a>
-
-            <a href="case-studies/gohighlevel-crm.html">
-              GoHighLevel CRM
-            </a>
-
-            <a href="case-studies/n8n-automation.html">
-              n8n Automation
-            </a>
+            <a href="case-studies.html">All Case Studies</a>
+            <a href="case-studies/gohighlevel-n8n-manychat.html">GHL + n8n + ManyChat</a>
+            <a href="case-studies/airtable-automation.html">Airtable Operations</a>
+            <a href="case-studies/retell-ai-n8n-gohighlevel-recruitment.html">AI Voice Recruitment</a>
+            <a href="case-studies/retell-ai-twilio-medical-spa.html">Medical Spa AI Voice</a>
+            <a href="case-studies/monday-crm-automation.html">Monday.com CRM</a>
+            <a href="case-studies/power-automate-ai-builder.html">Power Automate</a>
+            <a href="case-studies/gohighlevel-zapier-automation.html">GHL + Zapier</a>
 
           </div>
 
         </div>
 
-        <a href="about.html">
-          About
-        </a>
+        <a href="about.html">About</a>
 
       </nav>
 
@@ -104,21 +415,26 @@
 
   <main>
 
-    <!-- Hero -->
-    <section class="page-hero container">
+    <!-- =========================================
+         HERO
+    ========================================== -->
+
+    <section class="page-hero container receptionist-hero-accent">
 
       <p class="eyebrow">
-        CRM and Lead Operations
+        For service businesses
       </p>
 
       <h1>
-        GoHighLevel
-        <span class="gradient-purple">Automation Expert</span>
+        AI Receptionist that
+        <span class="gradient-blue">
+          books and follows up
+        </span>
       </h1>
 
       <p class="lead">
-        I build GoHighLevel systems that organize leads, trigger follow-up,
-        support booking, and give teams a clear view of every customer journey.
+        Give every inbound caller a fast, helpful response while your system
+        qualifies the enquiry, books the appointment, and updates your CRM.
       </p>
 
       <div class="hero-actions">
@@ -134,9 +450,9 @@
 
         <a
           class="btn btn-secondary"
-          href="case-studies/gohighlevel-crm.html"
+          href="case-studies/retell-ai-twilio-medical-spa.html"
         >
-          View GHL Case Study
+          See Medical Spa Case Study
         </a>
 
       </div>
@@ -144,114 +460,121 @@
     </section>
 
 
-    <!-- Capabilities -->
-    <section class="section container page-content">
+    <!-- =========================================
+         RECEPTIONIST CAPABILITIES
+    ========================================== -->
 
-      <div class="card-grid">
+    <section class="section container">
 
-        <article class="info-card">
+      <div class="section-head">
 
-          <div class="card-icon">
-            CRM
-          </div>
+        <p class="eyebrow">
+          AI Receptionist Capabilities
+        </p>
 
-          <h3>
-            Pipeline Structure
-          </h3>
+        <h2>
+          What an AI receptionist
+          <span>can handle</span>
+        </h2>
 
-          <p>
-            Set up stages and ownership so leads move through the process
-            with useful context and fewer gaps.
-          </p>
+        <p class="lead">
+          An AI receptionist doesn't just answer calls. It manages the
+          entire inbound conversation — from first contact to booking and CRM update.
+        </p>
 
-        </article>
-
-
-        <article class="info-card">
-
-          <div class="card-icon">
-            ↗
-          </div>
-
-          <h3>
-            Lead Follow-up
-          </h3>
-
-          <p>
-            Automate timely messages and task creation around calls,
-            forms, appointments, and pipeline changes.
-          </p>
-
-        </article>
+      </div>
 
 
-        <article class="info-card">
+      <div class="rec-capabilities">
 
-          <div class="card-icon">
-            AI
-          </div>
+        <div class="rec-capability">
+          <div class="cap-icon"><i data-lucide="phone-incoming"></i></div>
+          <h3>Answer Missed Calls</h3>
+          <p>Respond to new enquiries quickly and collect the details needed for a useful next step.</p>
+        </div>
 
-          <h3>
-            AI + GoHighLevel
-          </h3>
+        <div class="rec-capability">
+          <div class="cap-icon"><i data-lucide="user-check"></i></div>
+          <h3>Qualify and Book</h3>
+          <p>Guide callers through the right questions, availability, booking rules, and confirmation flow.</p>
+        </div>
 
-          <p>
-            Connect AI voice agents and n8n workflows to GoHighLevel
-            without losing human visibility or control.
-          </p>
+        <div class="rec-capability">
+          <div class="cap-icon"><i data-lucide="database"></i></div>
+          <h3>Update the Team</h3>
+          <p>Send call outcomes into GoHighLevel or another CRM so staff can follow up with full context.</p>
+        </div>
 
-        </article>
+        <div class="rec-capability">
+          <div class="cap-icon"><i data-lucide="message-square"></i></div>
+          <h3>SMS Follow-up</h3>
+          <p>Send confirmation, reminders, and follow-up messages automatically after every call.</p>
+        </div>
+
+        <div class="rec-capability">
+          <div class="cap-icon"><i data-lucide="calendar-check-2"></i></div>
+          <h3>Availability Checking</h3>
+          <p>Check real-time availability and book appointments directly from the conversation.</p>
+        </div>
+
+        <div class="rec-capability">
+          <div class="cap-icon"><i data-lucide="git-branch"></i></div>
+          <h3>Human Handoff</h3>
+          <p>Detect when a caller needs a human and transfer smoothly with full conversation context.</p>
+        </div>
 
       </div>
 
     </section>
 
 
-    <!-- CRM Workflow -->
+    <!-- =========================================
+         CASE STUDY HIGHLIGHTS
+    ========================================== -->
+
     <section class="section section-alt">
 
-      <div class="container page-content">
+      <div class="container">
 
-        <h2>
-          A CRM that keeps the
-          <span class="gradient-cyan">next action clear</span>
-        </h2>
+        <div class="section-head">
 
-        <p>
-          Good automation helps the team know what happened,
-          what matters now, and what should happen next.
-        </p>
-
-
-        <!-- CTA -->
-        <div class="cta-box page-cta">
-
-          <h2>
-            Improve your GoHighLevel setup
-          </h2>
-
-          <p>
-            Share your current workflow and the gaps you want to remove.
+          <p class="eyebrow">
+            Related Case Studies
           </p>
 
-          <div class="hero-actions">
+          <h2>
+            AI Receptionist in
+            <span>action</span>
+          </h2>
 
-            <a
-              class="btn btn-primary"
-              href="https://www.upwork.com/freelancers/~0130a036a70bd1e74e"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Start a Project
+          <p class="lead">
+            Real implementations that demonstrate AI receptionist workflows
+            for medical spas, clinics, and recruitment automation.
+          </p>
+
+        </div>
+
+
+        <div class="rec-case-highlights">
+
+          <div class="rec-case-card">
+            <span class="case-badge">Retell AI + Twilio</span>
+            <h3>Medical Spa AI Voice Agent</h3>
+            <p>Inbound receptionist and outbound calling agents with scheduling tools, conversation controls and Twilio SIP telephony for medical spa.</p>
+            <a class="case-link" href="case-studies/retell-ai-twilio-medical-spa.html">
+              View Case Study
+              <i data-lucide="arrow-right"></i>
             </a>
+          </div>
 
-            <a
-              class="btn btn-secondary"
-              href="case-studies/gohighlevel-crm.html"
-            >
-              See GHL Case Study
+          <div class="rec-case-card">
+            <span class="case-badge">Retell AI + n8n + GoHighLevel</span>
+            <h3>AI Voice Recruitment Automation</h3>
+            <p>AI voice agents screen applicants, capture qualification data, and route results through n8n into GoHighLevel CRM.</p>
+            <a class="case-link" href="case-studies/retell-ai-n8n-gohighlevel-recruitment.html">
+              View Case Study
+              <i data-lucide="arrow-right"></i>
             </a>
-
           </div>
 
         </div>
@@ -260,10 +583,265 @@
 
     </section>
 
+
+    <!-- =========================================
+         CALL FLOW
+    ========================================== -->
+
+    <section class="section container">
+
+      <div class="section-head">
+
+        <p class="eyebrow">
+          Call Flow
+        </p>
+
+        <h2>
+          One call, one clear
+          <span>business outcome</span>
+        </h2>
+
+        <p class="lead">
+          A receptionist workflow connects voice, n8n, GoHighLevel,
+          calendar, SMS, and human handoff into one dependable system.
+        </p>
+
+      </div>
+
+
+      <div class="rec-flow">
+
+        <div class="rec-flow-step">
+          <div class="flow-icon"><i data-lucide="phone-incoming"></i></div>
+          <strong>Incoming Call</strong>
+          <span>Customer calls the business number</span>
+        </div>
+
+        <div class="rec-flow-step">
+          <div class="flow-icon"><i data-lucide="bot"></i></div>
+          <strong>AI Answers</strong>
+          <span>Warm, professional receptionist tone</span>
+        </div>
+
+        <div class="rec-flow-step">
+          <div class="flow-icon"><i data-lucide="calendar-search"></i></div>
+          <strong>Qualify &amp; Book</strong>
+          <span>Check availability and schedule</span>
+        </div>
+
+        <div class="rec-flow-step">
+          <div class="flow-icon"><i data-lucide="database"></i></div>
+          <strong>CRM Update</strong>
+          <span>Call outcome sent to GoHighLevel</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         INTEGRATIONS ECOSYSTEM
+    ========================================== -->
+
+    <section class="section section-alt">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <p class="eyebrow">
+            Integration Ecosystem
+          </p>
+
+          <h2>
+            Connect AI receptionist with your
+            <span>existing tools</span>
+          </h2>
+
+          <p class="lead">
+            An AI receptionist works best when connected to the systems your business already uses.
+          </p>
+
+        </div>
+
+
+        <div class="rec-integrations">
+
+          <span>Retell AI</span>
+          <span>Twilio</span>
+          <span>GoHighLevel</span>
+          <span>n8n</span>
+          <span>Calendars</span>
+          <span>SMS</span>
+          <span>CRM</span>
+          <span>Webhooks</span>
+          <span>Vapi</span>
+          <span>Zapier</span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         FAQ - PROPER BOX STYLE
+    ========================================== -->
+
+    <section class="section container">
+
+      <div class="case-faq">
+
+        <div class="section-head">
+
+          <p class="eyebrow">
+            Technical FAQ
+          </p>
+
+          <h2>
+            About AI
+            <span>receptionists</span>
+          </h2>
+
+        </div>
+
+
+        <details>
+
+          <summary>
+            What is an AI receptionist?
+          </summary>
+
+          <p>
+            An AI receptionist is a voice agent that answers inbound calls,
+            handles customer inquiries, qualifies leads, books appointments,
+            and updates your CRM — all through natural conversation.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            What types of businesses can use an AI receptionist?
+          </summary>
+
+          <p>
+            AI receptionists are used by medical spas, clinics, law firms,
+            agencies, real estate, and any service business that receives
+            inbound calls for appointments or inquiries.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            How does the AI handle complex questions?
+          </summary>
+
+          <p>
+            The AI is configured with conversation logic and business rules.
+            It can answer FAQs, collect information, and seamlessly hand off
+            to a human when a complex question arises.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            Can the AI book appointments directly?
+          </summary>
+
+          <p>
+            Yes. The AI can check real-time availability and book appointments
+            directly using calendar APIs and scheduling functions.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            What happens if a caller needs to speak to a human?
+          </summary>
+
+          <p>
+            The AI detects when a caller needs human assistance and transfers
+            the call with full conversation context so the team can follow up
+            without repeating information.
+          </p>
+
+        </details>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         FINAL CTA
+    ========================================== -->
+
+    <section class="section container">
+
+      <div class="cta-box case-study-cta">
+
+        <p class="eyebrow">
+          Ready to automate?
+        </p>
+
+        <h2>
+          Design your AI
+          <span class="gradient-cyan">receptionist</span>
+        </h2>
+
+        <p>
+          Start with the calls your team handles most often.
+          Let's build an AI receptionist that works for your business.
+        </p>
+
+
+        <div class="hero-actions case-cta-actions">
+
+          <a
+            class="btn btn-primary"
+            href="https://www.upwork.com/freelancers/~0130a036a70bd1e74e"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Start a Project
+          </a>
+
+          <a
+            class="btn btn-secondary"
+            href="case-studies/retell-ai-twilio-medical-spa.html"
+          >
+            See Medical Spa Case Study
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
   </main>
 
 
-  <!-- Footer -->
+  <!-- =========================================
+       FOOTER
+  ========================================== -->
+
   <footer class="site-footer">
 
     <div class="container">
@@ -280,5 +858,14 @@
 
   <script src="script.js"></script>
 
+  <script>
+    window.addEventListener("load", function() {
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+    });
+  </script>
+
 </body>
+
 </html>

@@ -7,12 +7,22 @@
 
   <meta
     name="description"
-    content="About Talha Rehamni, an AI Voice Agent and Automation Specialist working with n8n, GoHighLevel, CRM systems, and API integrations."
+    content="About Talha Rehamni - AI Voice Agent & Automation Specialist. Learn how I build AI systems, CRM workflows, and automation that help businesses scale."
   />
 
   <meta name="robots" content="index, follow" />
+  <meta name="author" content="Talha Rehamni" />
 
-  <title>About Talha Rehamni | AI Automation Specialist</title>
+  <meta
+    property="og:title"
+    content="About Talha Rehamni | AI Voice Agent & Automation Specialist"
+  />
+  <meta
+    property="og:description"
+    content="About Talha Rehamni - AI Voice Agent & Automation Specialist. n8n, GoHighLevel, CRM, AI voice agents."
+  />
+
+  <title>About Talha Rehamni | AI Voice Agent & Automation Specialist</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,11 +33,254 @@
   />
 
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+
+  <style>
+    /* =========================================================
+       ABOUT PAGE STYLES
+    ========================================================= */
+
+    .about-hero-accent {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-hero-accent::before {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      right: -150px;
+      top: -200px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(155, 93, 229, 0.12), transparent 70%);
+      pointer-events: none;
+    }
+
+    /* What I Do Cards - 3 columns */
+    .about-services {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+      margin-top: 1.5rem;
+    }
+
+    .about-service-card {
+      padding: 1.8rem 1.5rem;
+      border: 1px solid var(--border, rgba(148, 163, 184, 0.18));
+      border-radius: 18px;
+      background: rgba(17, 24, 39, 0.7);
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .about-service-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(155, 93, 229, 0.3);
+      box-shadow: 0 12px 30px rgba(155, 93, 229, 0.06);
+    }
+
+    .about-service-card .service-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: rgba(155, 93, 229, 0.08);
+      color: #c084fc;
+      margin-bottom: 0.8rem;
+    }
+
+    .about-service-card .service-icon svg {
+      width: 24px;
+      height: 24px;
+      stroke-width: 1.8;
+    }
+
+    .about-service-card h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.1rem;
+      color: var(--text, #f8fafc);
+    }
+
+    .about-service-card p {
+      margin: 0;
+      color: var(--muted, #9db2c9);
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+
+    /* Problem-Solution Grid */
+    .about-problems {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.2rem;
+      margin-top: 1.5rem;
+    }
+
+    .about-problem-card {
+      padding: 1.8rem;
+      border: 1px solid var(--border, rgba(148, 163, 184, 0.18));
+      border-radius: 18px;
+      background: rgba(17, 24, 39, 0.7);
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .about-problem-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(56, 189, 248, 0.3);
+    }
+
+    .about-problem-card .problem-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: rgba(56, 189, 248, 0.08);
+      color: var(--cyan, #38bdf8);
+      margin-bottom: 0.6rem;
+    }
+
+    .about-problem-card .problem-icon svg {
+      width: 20px;
+      height: 20px;
+      stroke-width: 1.8;
+    }
+
+    .about-problem-card h3 {
+      margin: 0 0 0.3rem;
+      font-size: 1.05rem;
+      color: var(--text, #f8fafc);
+    }
+
+    .about-problem-card p {
+      margin: 0;
+      color: var(--muted, #9db2c9);
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+
+    /* Profile Cards (Upwork + LinkedIn) */
+    .about-profile-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.2rem;
+      margin-top: 1.5rem;
+    }
+
+    .about-profile-card {
+      padding: 1.8rem;
+      border: 1px solid var(--border, rgba(148, 163, 184, 0.18));
+      border-radius: 18px;
+      background: rgba(17, 24, 39, 0.7);
+      transition: transform 0.3s ease, border-color 0.3s ease;
+      text-align: center;
+    }
+
+    .about-profile-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(155, 93, 229, 0.3);
+    }
+
+    .about-profile-card .profile-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: rgba(155, 93, 229, 0.08);
+      color: #c084fc;
+      margin-bottom: 0.8rem;
+    }
+
+    .about-profile-card .profile-icon svg {
+      width: 24px;
+      height: 24px;
+      stroke-width: 1.8;
+    }
+
+    .about-profile-card h3 {
+      margin: 0 0 0.3rem;
+      font-size: 1.1rem;
+      color: var(--text, #f8fafc);
+    }
+
+    .about-profile-card .profile-stats {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin: 0.8rem 0;
+      font-size: 0.85rem;
+    }
+
+    .about-profile-card .profile-stats strong {
+      display: block;
+      font-size: 1.2rem;
+      color: var(--text, #f8fafc);
+    }
+
+    .about-profile-card .profile-stats span {
+      color: var(--muted, #9db2c9);
+    }
+
+    .about-profile-card .btn {
+      width: 100%;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .about-services {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .about-problems {
+        grid-template-columns: 1fr;
+      }
+      .about-profile-cards {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .about-services {
+        grid-template-columns: 1fr;
+      }
+      .about-profile-cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Talha Rehamni",
+        "jobTitle": "AI Voice Agent & Automation Specialist",
+        "description": "AI developer and automation specialist building practical systems with n8n, GoHighLevel, AI voice agents, and CRM automation.",
+        "sameAs": [
+          "https://www.upwork.com/freelancers/~0130a036a70bd1e74e",
+          "https://www.linkedin.com/in/talha-rehmani/"
+        ]
+      }
+    }
+  </script>
+
 </head>
 
 <body>
 
-  <!-- Navbar -->
+  <!-- =========================================
+       NAVBAR
+  ========================================== -->
+
   <header class="site-header">
     <div class="container nav-wrap">
 
@@ -37,63 +290,36 @@
 
       <nav class="main-nav" aria-label="Main navigation">
 
-        <a href="index.html">
-          Home
-        </a>
-
-        <a href="ai-voice-agent-developer.html">
-          AI Voice
-        </a>
-
-        <a href="n8n-automation-expert.html">
-          n8n
-        </a>
-
-        <a href="gohighlevel-automation.html">
-          GoHighLevel
-        </a>
-
-        <a href="ai-receptionist.html">
-          AI Receptionist
-        </a>
+        <a href="index.html">Home</a>
+        <a href="ai-voice-agent-developer.html">AI Voice</a>
+        <a href="n8n-automation-expert.html">n8n</a>
+        <a href="gohighlevel-automation.html">GoHighLevel</a>
+        <a href="ai-receptionist.html">AI Receptionist</a>
 
         <!-- Case Studies Dropdown -->
         <div class="nav-dropdown" data-nav-group="case-studies">
 
-          <button
-            class="nav-dropdown-toggle"
-            type="button"
-            aria-expanded="false"
-          >
+          <button class="nav-dropdown-toggle" type="button" aria-expanded="false">
             Case Studies
             <span class="dropdown-arrow"></span>
           </button>
 
           <div class="nav-dropdown-menu">
 
-            <a href="case-studies.html">
-              All Case Studies
-            </a>
-
-            <a href="case-studies/ai-voice-agent.html">
-              AI Voice Agent
-            </a>
-
-            <a href="case-studies/gohighlevel-crm.html">
-              GoHighLevel CRM
-            </a>
-
-            <a href="case-studies/n8n-automation.html">
-              n8n Automation
-            </a>
+            <a href="case-studies.html">All Case Studies</a>
+            <a href="case-studies/gohighlevel-n8n-manychat.html">GHL + n8n + ManyChat</a>
+            <a href="case-studies/airtable-automation.html">Airtable Operations</a>
+            <a href="case-studies/retell-ai-n8n-gohighlevel-recruitment.html">AI Voice Recruitment</a>
+            <a href="case-studies/retell-ai-twilio-medical-spa.html">Medical Spa AI Voice</a>
+            <a href="case-studies/monday-crm-automation.html">Monday.com CRM</a>
+            <a href="case-studies/power-automate-ai-builder.html">Power Automate</a>
+            <a href="case-studies/gohighlevel-zapier-automation.html">GHL + Zapier</a>
 
           </div>
 
         </div>
 
-        <a href="about.html">
-          About
-        </a>
+        <a href="about.html" class="active">About</a>
 
       </nav>
 
@@ -103,8 +329,11 @@
 
   <main>
 
-    <!-- Hero -->
-    <section class="page-hero container">
+    <!-- =========================================
+         HERO
+    ========================================== -->
+
+    <section class="page-hero container about-hero-accent">
 
       <p class="eyebrow">
         About Talha
@@ -148,57 +377,124 @@
     </section>
 
 
-    <!-- About Content -->
-    <section class="section container page-content">
+    <!-- =========================================
+         WHAT I DO
+    ========================================== -->
 
-      <div class="about-card">
+    <section class="section container">
 
-        <div class="about-profile">
+      <div class="section-head">
 
-          <img
-            src="asset/c1WIgNSgSPpBwolamvHfBUs_1iWdCvjbn6fXkw63Ju4ADVoE6cPp-lhNmgak8zQ3p7.webp"
-            alt="Talha Rehamni"
-          />
+        <p class="eyebrow">
+          What I Do
+        </p>
 
-          <div>
+        <h2>
+          I build systems that <span>solve real business problems</span>
+        </h2>
 
-            <h3>
-              Talha Rehamni
-            </h3>
-
-            <p>
-              AI Developer · CRM Automation Expert · GoHighLevel ·
-              AI Voice Bots · API Integration Specialist
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <p class="about-text">
+        <p class="lead">
           My work combines voice AI, workflow automation, CRM design,
           and API integration. I focus on understanding the business
           process first, then building a system that is reliable,
           observable, and useful to the team operating it.
         </p>
 
+      </div>
 
-        <div class="about-stats">
 
-          <div>
-            <strong>AI Voice</strong>
-            <span>Agents and receptionists</span>
+      <div class="about-services">
+
+        <div class="about-service-card">
+          <div class="service-icon"><i data-lucide="phone"></i></div>
+          <h3>AI Voice Agents</h3>
+          <p>Build conversational AI agents that answer calls, qualify leads, book appointments, and update your CRM in real-time.</p>
+        </div>
+
+        <div class="about-service-card">
+          <div class="service-icon"><i data-lucide="workflow"></i></div>
+          <h3>n8n Workflow Automation</h3>
+          <p>Design and implement reliable n8n workflows that connect apps, APIs, and AI models into seamless business processes.</p>
+        </div>
+
+        <div class="about-service-card">
+          <div class="service-icon"><i data-lucide="database"></i></div>
+          <h3>CRM Automation</h3>
+          <p>Set up GoHighLevel and other CRMs with lead pipelines, automated follow-ups, and structured customer journeys.</p>
+        </div>
+
+        <div class="about-service-card">
+          <div class="service-icon"><i data-lucide="plug-zap"></i></div>
+          <h3>API Integrations</h3>
+          <p>Connect systems through webhooks, REST APIs, and custom integrations to eliminate data silos and manual data entry.</p>
+        </div>
+
+        <div class="about-service-card">
+          <div class="service-icon"><i data-lucide="brain"></i></div>
+          <h3>AI + Business Logic</h3>
+          <p>Embed AI into your existing workflows for classification, routing, extraction, summarization, and decision support.</p>
+        </div>
+
+        <div class="about-service-card">
+          <div class="service-icon"><i data-lucide="users"></i></div>
+          <h3>Team &amp; Operations</h3>
+          <p>Build internal tools, task management systems, and dashboards that keep your team aligned and productive.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         HOW I HELP BUSINESSES GROW
+    ========================================== -->
+
+    <section class="section section-alt">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <p class="eyebrow">
+            How I Help Businesses Grow
+          </p>
+
+          <h2>
+            Solving the <span>real bottlenecks</span>
+          </h2>
+
+          <p class="lead">
+            Every business has repetitive tasks, missed opportunities, and manual processes that slow growth. I build systems that remove those friction points.
+          </p>
+
+        </div>
+
+
+        <div class="about-problems">
+
+          <div class="about-problem-card">
+            <div class="problem-icon"><i data-lucide="phone-missed"></i></div>
+            <h3>Missed Calls, Lost Leads</h3>
+            <p>AI receptionists answer every call, qualify the lead, book appointments, and update your CRM — so you never miss an opportunity.</p>
           </div>
 
-          <div>
-            <strong>n8n</strong>
-            <span>Workflow automation</span>
+          <div class="about-problem-card">
+            <div class="problem-icon"><i data-lucide="clock"></i></div>
+            <h3>Slow, Manual Follow-ups</h3>
+            <p>Automate email, SMS, and task follow-ups based on lead activity, appointment status, and pipeline changes — no more manual chasing.</p>
           </div>
 
-          <div>
-            <strong>CRM + AI</strong>
-            <span>Connected operations</span>
+          <div class="about-problem-card">
+            <div class="problem-icon"><i data-lucide="bar-chart-3"></i></div>
+            <h3>Disconnected Systems</h3>
+            <p>Connect your CRM, calendar, email, AI tools, and databases through n8n or Zapier — so data flows where it needs to go automatically.</p>
+          </div>
+
+          <div class="about-problem-card">
+            <div class="problem-icon"><i data-lucide="users"></i></div>
+            <h3>Team Overload</h3>
+            <p>Automate repetitive tasks so your team can focus on high-value work — not manual data entry, scheduling, or chasing leads.</p>
           </div>
 
         </div>
@@ -207,10 +503,212 @@
 
     </section>
 
+
+    <!-- =========================================
+         PROFILE CARDS (Upwork + LinkedIn)
+    ========================================== -->
+
+    <section class="section container">
+
+      <div class="section-head">
+
+        <p class="eyebrow">
+          Connect With Me
+        </p>
+
+        <h2>
+          My professional <span>profiles</span>
+        </h2>
+
+      </div>
+
+
+      <div class="about-profile-cards">
+
+        <!-- Upwork Card -->
+        <div class="about-profile-card">
+          <div class="profile-icon"><i data-lucide="briefcase"></i></div>
+          <h3>Upwork Profile</h3>
+          <div class="profile-stats">
+            <div>
+              <strong>Top Rated</strong>
+              <span>Freelancer</span>
+            </div>
+            <div>
+              <strong>100%</strong>
+              <span>Job Success</span>
+            </div>
+            <div>
+              <strong>21+</strong>
+              <span>Jobs</span>
+            </div>
+          </div>
+          <p style="color: var(--muted, #9db2c9); font-size: 0.85rem; margin-bottom: 1.2rem;">
+            View my verified work history, client reviews, and completed projects.
+          </p>
+          <a
+            class="btn btn-primary"
+            href="https://www.upwork.com/freelancers/~0130a036a70bd1e74e"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Upwork Profile
+          </a>
+        </div>
+
+        <!-- LinkedIn Card -->
+        <div class="about-profile-card">
+          <div class="profile-icon"><i data-lucide="linkedin"></i></div>
+          <h3>LinkedIn Profile</h3>
+          <div class="profile-stats">
+            <div>
+              <strong>1K+</strong>
+              <span>Followers</span>
+            </div>
+            <div>
+              <strong>500+</strong>
+              <span>Connections</span>
+            </div>
+            <div>
+              <strong>AI &amp; CRM</strong>
+              <span>Specialist</span>
+            </div>
+          </div>
+          <p style="color: var(--muted, #9db2c9); font-size: 0.85rem; margin-bottom: 1.2rem;">
+            Connect with me for professional updates, insights, and networking.
+          </p>
+          <a
+            class="btn btn-primary"
+            href="https://www.linkedin.com/in/talha-rehmani/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Connect on LinkedIn
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         ABOUT ME (Extended Bio + Stats)
+    ========================================== -->
+
+    <section class="section section-alt">
+
+      <div class="container">
+
+        <div class="about-card" style="width: min(100%, 860px); margin: 0 auto;">
+
+          <div class="about-profile">
+
+            <img
+              src="asset/c1WIgNSgSPpBwolamvHfBUs_1iWdCvjbn6fXkw63Ju4ADVoE6cPp-lhNmgak8zQ3p7.webp"
+              alt="Talha Rehamni"
+            />
+
+            <div>
+              <h3>Talha Rehamni</h3>
+              <p>AI Developer · CRM Automation Expert · GoHighLevel · AI Voice Bots · API Integration Specialist</p>
+            </div>
+
+          </div>
+
+          <p class="about-text">
+            My work combines voice AI, workflow automation, CRM design,
+            and API integration. I focus on understanding the business
+            process first, then building a system that is reliable,
+            observable, and useful to the team operating it.
+          </p>
+
+          <p class="about-text">
+            I believe automation should reduce manual work, not add complexity.
+            Every system I build is designed to be maintainable, scalable,
+            and aligned with the actual goals of the business.
+          </p>
+
+          <div class="about-stats">
+
+            <div>
+              <strong>AI Voice</strong>
+              <span>Agents and receptionists</span>
+            </div>
+
+            <div>
+              <strong>n8n</strong>
+              <span>Workflow automation</span>
+            </div>
+
+            <div>
+              <strong>CRM + AI</strong>
+              <span>Connected operations</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         FINAL CTA
+    ========================================== -->
+
+    <section class="section container">
+
+      <div class="cta-box" style="padding: 3.5rem 1.75rem; border-color: rgba(155, 93, 229, 0.3); background: linear-gradient(135deg, rgba(27, 20, 54, 0.98), rgba(19, 38, 68, 0.98)); box-shadow: 0 22px 50px rgba(77, 46, 160, 0.2); border-radius: 20px;">
+
+        <p class="eyebrow">
+          Let's Work Together
+        </p>
+
+        <h2>
+          Ready to automate your
+          <span class="gradient-purple">business?</span>
+        </h2>
+
+        <p style="max-width: 620px; margin: 1rem auto 2rem;">
+          I help businesses like yours build AI systems, CRM workflows, and automation that save time, reduce manual work, and grow revenue.
+        </p>
+
+
+        <div class="hero-actions" style="justify-content: center;">
+
+          <a
+            class="btn btn-primary"
+            href="https://www.upwork.com/freelancers/~0130a036a70bd1e74e"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Hire on Upwork
+          </a>
+
+          <a
+            class="btn btn-secondary"
+            href="case-studies.html"
+          >
+            View My Work
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
   </main>
 
 
-  <!-- Footer -->
+  <!-- =========================================
+       FOOTER
+  ========================================== -->
+
   <footer class="site-footer">
 
     <div class="container">
@@ -226,6 +724,14 @@
 
 
   <script src="script.js"></script>
+
+  <script>
+    window.addEventListener("load", function() {
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+    });
+  </script>
 
 </body>
 

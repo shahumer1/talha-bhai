@@ -1,0 +1,11 @@
+Milestone	Status
+M0: Positioning & Inputs	✅ Complete
+M1: Domain & Site Foundation	⏳ Domain/Upload pending
+M2: Core Pages & UX	✅ Complete (7 pages + 7 case studies)
+M3: Crawl/Index Setup	⏳ Domain ke baad hoga
+M4: Structured Data	✅ Complete
+M5: Case Studies & Proof	✅ Complete (7 case studies)
+M6: External Authority	⏳ Future scope
+M7: Analytics & Tracking	⏳ Domain ke baad hoga
+M8: QA & Launch	⏳ Domain ke baad hoga
+M9: Monthly Iteration	⏳ Future scope

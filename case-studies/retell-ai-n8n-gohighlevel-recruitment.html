@@ -2,25 +2,70 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>n8n Automation Case Study | Talha Rehamni</title>
+  <title>AI Voice Recruitment Automation | Retell AI + Twilio + n8n + GoHighLevel | Talha Rehamni</title>
 
   <meta
     name="description"
-    content="n8n automation case study covering API integrations, AI workflows, CRM sync and reliable business process automation."
-  >
+    content="AI voice recruitment automation case study using Retell AI, Twilio, n8n, and GoHighLevel. Candidate screening, qualification, follow-up, and CRM orchestration for moving and logistics company."
+  />
 
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Talha Rehamni" />
 
-  <link rel="stylesheet" href="../style.css">
+  <meta
+    property="og:title"
+    content="AI Voice Recruitment Automation | Retell AI + Twilio + n8n + GoHighLevel"
+  />
+
+  <meta
+    property="og:description"
+    content="A multi-system recruitment automation where AI voice agents screen applicants, capture qualification data, and route results into GoHighLevel CRM."
+  />
+
+  <meta property="og:type" content="article" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="case-study.css" />
+
+  
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "AI Voice Recruitment Automation | Retell AI + Twilio + n8n + GoHighLevel",
+      "description": "A multi-system recruitment automation where AI voice agents screen applicants, capture qualification data, and route results into GoHighLevel CRM.",
+      "author": {
+        "@type": "Person",
+        "name": "Talha Rehamni",
+        "sameAs": "https://www.upwork.com/freelancers/~0130a036a70bd1e74e"
+      },
+      "about": ["Retell AI", "Twilio", "n8n", "GoHighLevel", "AI Voice", "Recruitment Automation"]
+    }
+  </script>
+
 </head>
 
-<body>
 
-  <!-- Navbar -->
+<body class="case-study-page">
+
+  <!-- =========================================
+       NAVBAR
+  ========================================== -->
+
   <header class="site-header">
+
     <div class="container nav-wrap">
 
       <a class="brand" href="../index.html">
@@ -49,41 +94,13 @@
           AI Receptionist
         </a>
 
-
-        <!-- Case Studies Dropdown -->
-        <div class="nav-dropdown" data-nav-group="case-studies">
-
-          <button
-            class="nav-dropdown-toggle"
-            type="button"
-            aria-expanded="false"
-          >
-            Case Studies
-            <span class="dropdown-arrow"></span>
-          </button>
-
-          <div class="nav-dropdown-menu">
-
-            <a href="../case-studies.html">
-              All Case Studies
-            </a>
-
-            <a href="ai-voice-agent.html">
-              AI Voice Agent
-            </a>
-
-            <a href="gohighlevel-crm.html">
-              GoHighLevel CRM
-            </a>
-
-            <a href="n8n-automation.html">
-              n8n Automation
-            </a>
-
-          </div>
-
-        </div>
-
+        <a
+          href="../case-studies.html"
+          class="active"
+          aria-current="page"
+        >
+          Case Studies
+        </a>
 
         <a href="../about.html">
           About
@@ -92,100 +109,342 @@
       </nav>
 
     </div>
+
   </header>
 
 
   <main>
 
-    <!-- Hero -->
-    <section class="page-hero container">
+
+    <!-- =========================================
+         BREADCRUMB
+    ========================================== -->
+
+    <div class="container">
+
+      <nav
+        class="case-breadcrumb"
+        aria-label="Breadcrumb"
+      >
+
+        <a href="../index.html">
+          Home
+        </a>
+
+        <span aria-hidden="true">›</span>
+
+        <a href="../case-studies.html">
+          Case Studies
+        </a>
+
+        <span aria-hidden="true">›</span>
+
+        <span aria-current="page">
+          AI Voice Recruitment Automation
+        </span>
+
+      </nav>
+
+    </div>
+
+
+
+    <!-- =========================================
+         HERO
+    ========================================== -->
+
+    <section class="case-study-hero container">
 
       <p class="eyebrow">
-        Case Study
+        Automation Case Study
       </p>
 
       <h1>
-        n8n Workflow
+        AI Voice Recruitment
         <span class="gradient-cyan">
-          Automation & API Integration
+          Automation
         </span>
       </h1>
 
       <p class="lead">
-        A connected automation workflow using n8n to move data between
-        APIs, AI tools, CRM systems, and follow-up processes.
+        A multi-system recruitment automation where AI voice agents
+        screen applicants, capture structured qualification data,
+        and route results through n8n into GoHighLevel CRM.
+      </p>
+
+
+      <div
+        class="case-tech-row"
+        aria-label="Technologies used"
+      >
+        <span>Retell AI</span>
+        <span>Twilio</span>
+        <span>n8n</span>
+        <span>GoHighLevel</span>
+        <span>AI Voice</span>
+        <span>Webhooks</span>
+        <span>SIP Trunking</span>
+      </div>
+
+
+      <p class="case-confidential">
+        Moving and Logistics Company · Client identifiers removed
       </p>
 
     </section>
 
 
-    <!-- Case Study Content -->
-    <section class="section container page-content">
 
-      <h2>
-        The Problem
-      </h2>
+    <!-- =========================================
+         AT A GLANCE
+    ========================================== -->
 
-      <p>
-        The business had repetitive manual tasks across different tools
-        and needed a reliable way to move information between systems.
-      </p>
+    <section class="section container case-glance-section">
 
+      <div class="section-head">
 
-      <h2>
-        The Solution
-      </h2>
-
-      <p>
-        I built an n8n workflow that receives data, processes business
-        logic, connects external APIs, and sends the final information
-        into the correct CRM or business tool.
-      </p>
-
-
-      <h2>
-        Architecture
-      </h2>
-
-      <p>
-        Webhook → n8n → API / AI → CRM → Follow-up
-      </p>
-
-
-      <h2>
-        What I Built
-      </h2>
-
-      <ul>
-        <li>Webhook automation</li>
-        <li>API integrations</li>
-        <li>AI workflow logic</li>
-        <li>CRM synchronization</li>
-        <li>Error handling and validation</li>
-        <li>Automated follow-up actions</li>
-      </ul>
-
-
-      <h2>
-        Result
-      </h2>
-
-      <p>
-        The workflow reduced manual handoffs and created a more connected
-        process between the tools used by the business.
-      </p>
-
-
-      <!-- CTA -->
-      <div class="cta-box page-cta">
+        <p class="eyebrow">
+          Case Study At A Glance
+        </p>
 
         <h2>
-          Have an n8n workflow to automate?
+          System
+          <span>overview</span>
         </h2>
 
-        <p>
-          Share your process and I can help design the automation.
+      </div>
+
+
+      <dl class="case-glance-grid">
+
+        <div class="case-glance-card">
+
+          <dt>
+            Use Case
+          </dt>
+
+          <dd>
+            Recruitment Candidate Screening
+          </dd>
+
+        </div>
+
+
+        <div class="case-glance-card">
+
+          <dt>
+            Voice Layer
+          </dt>
+
+          <dd>
+            Retell AI
+          </dd>
+
+        </div>
+
+
+        <div class="case-glance-card">
+
+          <dt>
+            Telephony
+          </dt>
+
+          <dd>
+            Twilio (SIP Trunking)
+          </dd>
+
+        </div>
+
+
+        <div class="case-glance-card">
+
+          <dt>
+            Orchestration
+          </dt>
+
+          <dd>
+            n8n + Webhooks
+          </dd>
+
+        </div>
+
+
+        <div class="case-glance-card">
+
+          <dt>
+            CRM Layer
+          </dt>
+
+          <dd>
+            GoHighLevel
+          </dd>
+
+        </div>
+
+
+        <div class="case-glance-card">
+
+          <dt>
+            Verified Evidence
+          </dt>
+
+          <dd>
+            Live Workflow Activity
+          </dd>
+
+        </div>
+
+      </dl>
+
+    </section>
+
+
+
+    <!-- =========================================
+         BUSINESS OBJECTIVE
+    ========================================== -->
+
+    <section class="section section-alt">
+
+      <div class="container">
+
+        <div class="case-overview-grid">
+
+
+          <article class="case-panel">
+
+            <p class="case-label">
+              Business Objective
+            </p>
+
+            <h2>
+              Automate the first round of
+              <span class="gradient-blue">
+                recruitment screening
+              </span>
+            </h2>
+
+            <p>
+              The recruitment team generated applicants through
+              advertising and forms. Each applicant needed to be
+              contacted, screened, qualified against operational
+              requirements, and moved into the correct hiring path.
+            </p>
+
+            <p>
+              Doing this manually created repetitive calling work
+              and made screening consistency dependent on recruiter
+              availability. The automation was designed to perform
+              the first qualification conversation automatically
+              and pass structured outcomes into the hiring workflow.
+            </p>
+
+          </article>
+
+
+
+          <aside class="case-highlight-card">
+
+            <p class="case-label">
+              Core Outcome
+            </p>
+
+            <h3>
+              AI voice screening with structured CRM handoff
+            </h3>
+
+            <p>
+              Candidates are contacted by voice, asked qualification
+              questions, evaluated against hiring conditions, and
+              routed into the correct next step with structured data
+              available to the recruitment team.
+            </p>
+
+          </aside>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         TALHA / ENTITY CLARITY + CTA
+    ========================================== -->
+
+    <section class="section container">
+
+      <div class="section-head">
+
+        <p class="eyebrow">
+          Implementation Scope
         </p>
+
+        <h2>
+          What Talha Rehamni
+          <span>implemented</span>
+        </h2>
+
+        <p class="lead">
+          The implementation combines Retell AI voice agents,
+          Twilio telephony, n8n orchestration, GoHighLevel CRM
+          integration, candidate qualification logic, webhook
+          routing, and automated handoff controls.
+        </p>
+
+      </div>
+
+
+      <div class="case-capability-grid">
+
+        <div class="case-capability">
+          <span>✓</span>
+          Retell AI voice agent configuration
+        </div>
+
+        <div class="case-capability">
+          <span>✓</span>
+          Twilio SIP trunk setup
+        </div>
+
+        <div class="case-capability">
+          <span>✓</span>
+          n8n workflow orchestration
+        </div>
+
+        <div class="case-capability">
+          <span>✓</span>
+          GoHighLevel CRM integration
+        </div>
+
+        <div class="case-capability">
+          <span>✓</span>
+          Candidate screening logic
+        </div>
+
+        <div class="case-capability">
+          <span>✓</span>
+          Structured variable extraction
+        </div>
+
+        <div class="case-capability">
+          <span>✓</span>
+          Call transfer and fallback handling
+        </div>
+
+        <div class="case-capability">
+          <span>✓</span>
+          Appointment booking and confirmation
+        </div>
+
+      </div>
+
+
+      <!-- CTA BUTTON -->
+      <div class="impl-cta">
 
         <a
           class="btn btn-primary"
@@ -200,10 +459,1243 @@
 
     </section>
 
+
+
+    <!-- =========================================
+         HIGH LEVEL ARCHITECTURE
+    ========================================== -->
+
+    <section class="section section-alt">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <p class="eyebrow">
+            High-Level Architecture
+          </p>
+
+          <h2>
+            Applicant to qualified
+            <span>candidate flow</span>
+          </h2>
+
+          <p class="lead">
+            The system connects voice conversation, telephony,
+            automation logic and CRM operations into one workflow.
+          </p>
+
+        </div>
+
+
+        <ol
+          class="case-flow"
+          aria-label="High-level system architecture"
+        >
+
+
+          <li class="case-flow-node">
+
+            <span class="case-flow-number">
+              01
+            </span>
+
+            <h3>
+              Applicant Enters
+            </h3>
+
+            <p>
+              Candidate responds to an ad or completes the
+              application form and is created as a lead.
+            </p>
+
+          </li>
+
+
+          <li class="case-flow-node">
+
+            <span class="case-flow-number">
+              02
+            </span>
+
+            <h3>
+              CRM + Orchestration
+            </h3>
+
+            <p>
+              GoHighLevel and n8n handle the applicant record
+              and trigger the correct calling workflow.
+            </p>
+
+          </li>
+
+
+          <li class="case-flow-node">
+
+            <span class="case-flow-number">
+              03
+            </span>
+
+            <h3>
+              AI Voice Contact
+            </h3>
+
+            <p>
+              Retell AI calls the applicant through Twilio
+              and starts the recruitment conversation.
+            </p>
+
+          </li>
+
+
+          <li class="case-flow-node">
+
+            <span class="case-flow-number">
+              04
+            </span>
+
+            <h3>
+              Qualification Interview
+            </h3>
+
+            <p>
+              The AI asks role-relevant questions and captures
+              structured responses for decisioning.
+            </p>
+
+          </li>
+
+
+          <li class="case-flow-node">
+
+            <span class="case-flow-number">
+              05
+            </span>
+
+            <h3>
+              CRM Handoff
+            </h3>
+
+            <p>
+              Structured results return through n8n to GoHighLevel
+              so the team can act without replaying the call.
+            </p>
+
+          </li>
+
+
+        </ol>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         CANDIDATE JOURNEY
+    ========================================== -->
+
+    <section class="section container">
+
+      <div class="section-head">
+
+        <p class="eyebrow">
+          Candidate Journey
+        </p>
+
+        <h2>
+          End-to-end
+          <span>flow</span>
+        </h2>
+
+        <p class="lead">
+          The voice agent does not only talk. It extracts
+          decision-ready data that can be consumed by automations
+          after the call.
+        </p>
+
+      </div>
+
+
+      <div class="case-process-grid">
+
+
+        <article class="case-process-card">
+
+          <span class="case-process-no">
+            01
+          </span>
+
+          <p class="case-label">
+            Entry
+          </p>
+
+          <h3>
+            Applicant enters
+          </h3>
+
+          <p>
+            A candidate responds to an ad or completes the
+            application form and is created as a lead in the system.
+          </p>
+
+        </article>
+
+
+        <article class="case-process-card">
+
+          <span class="case-process-no">
+            02
+          </span>
+
+          <p class="case-label">
+            Orchestration
+          </p>
+
+          <h3>
+            CRM and orchestration
+          </h3>
+
+          <p>
+            The applicant record is handled through GoHighLevel
+            and n8n so the system can trigger the correct
+            calling workflow.
+          </p>
+
+        </article>
+
+
+        <article class="case-process-card">
+
+          <span class="case-process-no">
+            03
+          </span>
+
+          <p class="case-label">
+            Voice Contact
+          </p>
+
+          <h3>
+            AI voice contact
+          </h3>
+
+          <p>
+            Retell AI calls the applicant through the Twilio
+            telephony layer and starts the recruitment conversation.
+          </p>
+
+        </article>
+
+
+        <article class="case-process-card">
+
+          <span class="case-process-no">
+            04
+          </span>
+
+          <p class="case-label">
+            Confirmation
+          </p>
+
+          <h3>
+            Identity confirmation
+          </h3>
+
+          <p>
+            The agent confirms basic details and uses explicit
+            confirmation steps before moving forward.
+          </p>
+
+        </article>
+
+
+        <article class="case-process-card">
+
+          <span class="case-process-no">
+            05
+          </span>
+
+          <p class="case-label">
+            Interview
+          </p>
+
+          <h3>
+            Qualification interview
+          </h3>
+
+          <p>
+            The AI asks role-relevant questions, including
+            experience and physical-work requirements, and captures
+            structured responses.
+          </p>
+
+        </article>
+
+
+        <article class="case-process-card">
+
+          <span class="case-process-no">
+            06
+          </span>
+
+          <p class="case-label">
+            Compliance
+          </p>
+
+          <h3>
+            Compliance screening
+          </h3>
+
+          <p>
+            Drug-screen and background-check requirements are
+            handled through controlled branching and follow-up rules.
+          </p>
+
+        </article>
+
+
+        <article class="case-process-card">
+
+          <span class="case-process-no">
+            07
+          </span>
+
+          <p class="case-label">
+            Decision
+          </p>
+
+          <h3>
+            Decision path
+          </h3>
+
+          <p>
+            Qualified candidates move toward recruiter follow-up
+            or interview booking. Non-qualified candidates move
+            to the rejection path with an appropriate reason.
+          </p>
+
+        </article>
+
+
+        <article class="case-process-card">
+
+          <span class="case-process-no">
+            08
+          </span>
+
+          <p class="case-label">
+            Handoff
+          </p>
+
+          <h3>
+            CRM handoff
+          </h3>
+
+          <p>
+            Structured results are returned through n8n to the
+            CRM so the recruitment team can act on the candidate
+            without replaying the entire screening call.
+          </p>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         RETELL AI VOICE LAYER
+    ========================================== -->
+
+    <section class="section section-alt">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <p class="eyebrow">
+            Retell AI Voice Layer
+          </p>
+
+          <h2>
+            Conversation
+            <span>architecture</span>
+          </h2>
+
+          <p class="lead">
+            The voice agent is configured for structured candidate
+            conversations with explicit variable extraction and
+            logic branches.
+          </p>
+
+        </div>
+
+
+        <div class="case-process-grid">
+
+
+          <article class="case-process-card">
+
+            <p class="case-label">
+              Conversation Control
+            </p>
+
+            <h3>
+              Inbound and outbound flows
+            </h3>
+
+            <p>
+              Separate voice-agent flows were configured for
+              different call situations, including inbound
+              candidate responses and outbound screening calls.
+            </p>
+
+          </article>
+
+
+          <article class="case-process-card">
+
+            <p class="case-label">
+              Variable Extraction
+            </p>
+
+            <h3>
+              Structured data capture
+            </h3>
+
+            <p>
+              Extract Variable nodes converted spoken answers
+              into structured fields instead of leaving all
+              logic inside a transcript.
+            </p>
+
+          </article>
+
+
+          <article class="case-process-card">
+
+            <p class="case-label">
+              Logic Branching
+            </p>
+
+            <h3>
+              Smart response handling
+            </h3>
+
+            <p>
+              Logic branches allowed the agent to handle
+              affirmative, negative, uncertain and callback
+              responses differently.
+            </p>
+
+          </article>
+
+
+          <article class="case-process-card">
+
+            <p class="case-label">
+              Call Transfer
+            </p>
+
+            <h3>
+              Human handoff support
+            </h3>
+
+            <p>
+              Call-transfer and failed-transfer paths prevented
+              the experience from collapsing when a live handoff
+              was not available.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         QUALIFICATION LOGIC + DECISION CARDS
+    ========================================== -->
+
+    <section class="section container">
+
+      <div class="section-head">
+
+        <p class="eyebrow">
+          Qualification Logic
+        </p>
+
+        <h2>
+          Screening criteria implemented
+          <span>in the voice workflow</span>
+        </h2>
+
+      </div>
+
+
+      <div class="case-process-grid">
+
+
+        <article class="case-process-card">
+
+          <p class="case-label">
+            Experience
+          </p>
+
+          <h3>
+            Work background questions
+          </h3>
+
+          <p>
+            Relevant work-background and experience questions
+            are asked to assess candidate suitability.
+          </p>
+
+        </article>
+
+
+        <article class="case-process-card">
+
+          <p class="case-label">
+            Physical Requirements
+          </p>
+
+          <h3>
+            Physical-work confirmation
+          </h3>
+
+          <p>
+            Physical-work requirement confirmation for a moving
+            and logistics role is included in the screening.
+          </p>
+
+        </article>
+
+
+        <article class="case-process-card">
+
+          <p class="case-label">
+            Drug Screen
+          </p>
+
+          <h3>
+            Drug-screen willingness
+          </h3>
+
+          <p>
+            Drug-screen willingness and callback handling where
+            a candidate cannot answer immediately.
+          </p>
+
+        </article>
+
+
+        <article class="case-process-card">
+
+          <p class="case-label">
+            Background Check
+          </p>
+
+          <h3>
+            Background-check questions
+          </h3>
+
+          <p>
+            Background-check questions with controlled follow-up
+            and exception handling.
+          </p>
+
+        </article>
+
+
+      </div>
+
+
+      <!-- DECISION CARDS - FIXED -->
+      <div class="case-decision-grid">
+
+        <div class="case-decision-card">
+          <span class="decision-icon">✓</span>
+          <div class="decision-text">
+            <strong>Qualified Path</strong>
+            <span class="decision-sub">Recruiter review or interview</span>
+          </div>
+        </div>
+
+        <div class="case-decision-card">
+          <span class="decision-icon">✖</span>
+          <div class="decision-text">
+            <strong>Non-Qualified Path</strong>
+            <span class="decision-sub">Rejection with reason</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         OUTBOUND + BOOKING
+    ========================================== -->
+
+    <section class="section section-alt">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <p class="eyebrow">
+            Beyond Screening
+          </p>
+
+          <h2>
+            Outbound calls, booking
+            <span>and human handoff</span>
+          </h2>
+
+          <p class="lead">
+            The implementation also includes operational paths for
+            appointment booking, SMS confirmation and transfer handling.
+          </p>
+
+        </div>
+
+
+        <div class="case-proof-grid">
+
+
+          <article class="case-proof-card">
+
+            <span class="case-proof-tag">
+              Outbound Agent
+            </span>
+
+            <h3>
+              Appointment booking path
+            </h3>
+
+            <p>
+              Outbound agent flow with appointment booking,
+              variable extraction, SMS and confirmation handling.
+            </p>
+
+          </article>
+
+
+          <article class="case-proof-card">
+
+            <span class="case-proof-tag">
+              Transfer Logic
+            </span>
+
+            <h3>
+              Fallback conversation paths
+            </h3>
+
+            <p>
+              Transfer logic and fallback conversation paths when
+              a live transfer is unavailable or a candidate does
+              not confirm a message.
+            </p>
+
+          </article>
+
+
+        </div>
+
+
+        <div class="case-evidence-note">
+
+          <strong>
+            Operational design
+          </strong>
+
+          <p>
+            The workflow contains explicit success and failure paths.
+            This reduces dead ends when a transfer fails, a candidate
+            does not confirm a message, or the system needs to
+            capture additional information before ending the call.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         N8N + GOHIGHLEVEL ORCHESTRATION
+    ========================================== -->
+
+    <section class="section container">
+
+      <div class="section-head">
+
+        <p class="eyebrow">
+          Orchestration
+        </p>
+
+        <h2>
+          n8n and GoHighLevel
+          <span>system integration</span>
+        </h2>
+
+        <p class="lead">
+          n8n acts as the system glue connecting voice events
+          to CRM and appointment actions.
+        </p>
+
+      </div>
+
+
+      <div class="case-process-grid">
+
+
+        <article class="case-process-card">
+
+          <p class="case-label">
+            Intake
+          </p>
+
+          <h3>
+            Webhook intake
+          </h3>
+
+          <p>
+            Accepts structured events from the voice or calling layer.
+          </p>
+
+        </article>
+
+
+        <article class="case-process-card">
+
+          <p class="case-label">
+            Processing
+          </p>
+
+          <h3>
+            JavaScript data preparation
+          </h3>
+
+          <p>
+            JavaScript steps normalize or prepare data before
+            CRM requests.
+          </p>
+
+        </article>
+
+
+        <article class="case-process-card">
+
+          <p class="case-label">
+            Search
+          </p>
+
+          <h3>
+            Contact search and routing
+          </h3>
+
+          <p>
+            Contact search prevents blind record creation and
+            supports found versus not-found paths with different
+            routing.
+          </p>
+
+        </article>
+
+
+        <article class="case-process-card">
+
+          <p class="case-label">
+            CRM Actions
+          </p>
+
+          <h3>
+            GoHighLevel API integration
+          </h3>
+
+          <p>
+            GoHighLevel or LeadConnector API requests create
+            or find contacts and book the appropriate appointment path.
+          </p>
+
+        </article>
+
+
+        <article class="case-process-card">
+
+          <p class="case-label">
+            Error Handling
+          </p>
+
+          <h3>
+            Dedicated error branches
+          </h3>
+
+          <p>
+            Dedicated error branches return controlled failures
+            instead of silently dropping the workflow.
+          </p>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         TWILIO TELEPHONY
+    ========================================== -->
+
+    <section class="section section-alt">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <p class="eyebrow">
+            Telephony Infrastructure
+          </p>
+
+          <h2>
+            Twilio and SIP
+            <span>integration</span>
+          </h2>
+
+          <p class="lead">
+            Twilio was configured as the calling and SIP transport
+            layer between the phone network and the Retell voice
+            environment.
+          </p>
+
+        </div>
+
+
+        <div class="case-capability-grid">
+
+          <div class="case-capability">
+            <span>✓</span>
+            Elastic SIP trunk configured for Retell integration
+          </div>
+
+          <div class="case-capability">
+            <span>✓</span>
+            Origination URI configured toward Retell AI
+          </div>
+
+          <div class="case-capability">
+            <span>✓</span>
+            Termination routing and authentication controls
+          </div>
+
+          <div class="case-capability">
+            <span>✓</span>
+            Test-call capability for implementation and troubleshooting
+          </div>
+
+          <div class="case-capability">
+            <span>✓</span>
+            Calling infrastructure separated from business logic
+          </div>
+
+          <div class="case-capability">
+            <span>✓</span>
+            Two-way call routing infrastructure
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         TECHNOLOGY RESPONSIBILITIES
+    ========================================== -->
+
+    <section class="section container">
+
+      <div class="section-head">
+
+        <p class="eyebrow">
+          Technology Responsibilities
+        </p>
+
+        <h2>
+          The role of each
+          <span>platform</span>
+        </h2>
+
+      </div>
+
+
+      <div class="case-process-grid">
+
+
+        <article class="case-process-card">
+
+          <p class="case-label">
+            CRM
+          </p>
+
+          <h3>
+            GoHighLevel
+          </h3>
+
+          <p>
+            Applicant CRM for lead records, status management,
+            appointment or recruiter handoff, and downstream
+            follow-up.
+          </p>
+
+        </article>
+
+
+        <article class="case-process-card">
+
+          <p class="case-label">
+            Orchestration
+          </p>
+
+          <h3>
+            n8n
+          </h3>
+
+          <p>
+            Webhooks, data normalization, conditional routing,
+            contact search, API actions and error handling.
+          </p>
+
+        </article>
+
+
+        <article class="case-process-card">
+
+          <p class="case-label">
+            Conversation
+          </p>
+
+          <h3>
+            Retell AI
+          </h3>
+
+          <p>
+            Inbound and outbound voice conversations, variable
+            extraction, qualification questions, transfer logic
+            and in-call actions.
+          </p>
+
+        </article>
+
+
+        <article class="case-process-card">
+
+          <p class="case-label">
+            Telephony
+          </p>
+
+          <h3>
+            Twilio
+          </h3>
+
+          <p>
+            Phone number and SIP transport, PSTN routing,
+            origination and termination connectivity.
+          </p>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         VERIFIED OUTCOME
+    ========================================== -->
+
+    <section class="section section-alt">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <p class="eyebrow">
+            Verified Outcome
+          </p>
+
+          <h2>
+            A connected recruitment
+            <span>automation architecture</span>
+          </h2>
+
+          <p class="lead">
+            The implementation demonstrates how conversation,
+            telephony, automation logic and CRM operations can
+            operate as connected layers.
+          </p>
+
+        </div>
+
+
+        <div class="case-capability-grid">
+
+          <div class="case-capability">
+            <span>✓</span>
+            AI voice agents with multi-step business conversations
+          </div>
+
+          <div class="case-capability">
+            <span>✓</span>
+            Recruitment screening based on explicit business rules
+          </div>
+
+          <div class="case-capability">
+            <span>✓</span>
+            Structured variable extraction for downstream decisioning
+          </div>
+
+          <div class="case-capability">
+            <span>✓</span>
+            Twilio SIP trunk setup for production-style voice routing
+          </div>
+
+          <div class="case-capability">
+            <span>✓</span>
+            n8n orchestration connecting voice to CRM
+          </div>
+
+          <div class="case-capability">
+            <span>✓</span>
+            Error paths, retries, transfer fallbacks and validation
+          </div>
+
+        </div>
+
+
+        <div class="case-evidence-note">
+
+          <strong>
+            Evidence and performance note
+          </strong>
+
+          <p>
+            No revenue impact, conversion improvement, number of
+            hires or time saved is claimed because those figures
+            were not provided as verified project metrics. This
+            case study focuses on the architecture and functionality
+            evidenced by the supplied implementation screenshots.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         RELEVANT FAQ
+    ========================================== -->
+
+    <section class="section container">
+
+      <div class="case-faq">
+
+        <div class="section-head">
+
+          <p class="eyebrow">
+            Technical FAQ
+          </p>
+
+          <h2>
+            About this
+            <span>recruitment automation</span>
+          </h2>
+
+        </div>
+
+
+        <details>
+
+          <summary>
+            How does the AI voice recruitment automation work?
+          </summary>
+
+          <p>
+            Applicants are contacted by a Retell AI voice agent
+            through Twilio telephony. The agent asks qualification
+            questions, captures structured responses, and routes
+            the results through n8n into GoHighLevel CRM for
+            recruiter follow-up or rejection handling.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            Why use Retell AI for recruitment screening?
+          </summary>
+
+          <p>
+            Retell AI provides structured variable extraction,
+            conversation logic branches, call transfer support,
+            and in-call SMS capabilities. This allows the voice
+            agent to conduct controlled, multi-step business
+            conversations and produce decision-ready data.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            What role does Twilio play in the system?
+          </summary>
+
+          <p>
+            Twilio provides the telephony infrastructure with
+            Elastic SIP trunking. It handles origination and
+            termination routing between the phone network and
+            the Retell AI voice environment.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            How are qualified and non-qualified candidates handled?
+          </summary>
+
+          <p>
+            Candidates who satisfy required screening conditions
+            are moved into the next recruitment step (recruiter
+            review, interview scheduling). Candidates who fail a
+            required condition are routed to a non-qualified
+            status with the relevant outcome or reason.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            How does n8n connect the voice layer to the CRM?
+          </summary>
+
+          <p>
+            n8n accepts webhook events from the voice layer,
+            processes data with JavaScript steps, searches for
+            existing contacts, and makes GoHighLevel API calls
+            to create or update applicant records and book
+            appointments. Explicit error branches prevent
+            silent failures.
+          </p>
+
+        </details>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         RELATED SERVICES + CTA
+    ========================================== -->
+
+    <section class="section container">
+
+      <div class="cta-box case-study-cta">
+
+        <p class="eyebrow">
+          Related Automation Services
+        </p>
+
+        <h2>
+          Need a similar AI voice
+          <span>recruitment system?</span>
+        </h2>
+
+        <p>
+          Talha Rehamni builds AI voice agents, n8n workflows,
+          GoHighLevel CRM systems, and telephony integrations
+          for recruitment, lead qualification, and business
+          process automation.
+        </p>
+
+
+        <div class="hero-actions case-cta-actions">
+
+          <a
+            class="btn btn-primary"
+            href="https://www.upwork.com/freelancers/~0130a036a70bd1e74e"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Hire on Upwork
+          </a>
+
+
+          <a
+            class="btn btn-secondary"
+            href="../ai-voice-agent-developer.html"
+          >
+            AI Voice Agent Development
+          </a>
+
+
+          <a
+            class="btn btn-secondary"
+            href="../n8n-automation-expert.html"
+          >
+            n8n Automation
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
   </main>
 
 
-  <!-- Footer -->
+
+  <!-- =========================================
+       FOOTER
+  ========================================== -->
+
   <footer class="site-footer">
 
     <div class="container">
